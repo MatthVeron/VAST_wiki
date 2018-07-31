@@ -8,7 +8,7 @@ Obj = Build_TMB_Fn( TmbData=data, ... )
 # Optimize
 Opt = TMBhelper::Optimize( obj=Obj )
 # Simulate new data
-Sim = Obj.simulate( complete=TRUE )
+Sim = Obj$simulate( complete=TRUE )
 ```
 
 You can then fit this new data set easily and compare results with your original fit
