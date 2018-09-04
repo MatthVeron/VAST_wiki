@@ -35,7 +35,7 @@ library(VAST)
 
 Data_Set = "EBS_pollock"
 
-Version = SpatialDeltaGLMM::get_latest_version( package="VAST" )
+Version = get_latest_version( package="VAST" )
 Method = c("Grid", "Mesh", "Spherical_mesh")[2]
 grid_size_km = 25
 n_x = 50   # Specify number of stations (a.k.a. "knots")
@@ -57,7 +57,7 @@ DateFile = paste0(RootDir,'/',Date,'_V1/')
 dir.create(DateFile)
 
 # Load data
-data( EBS_pollock_data, package="SpatialDeltaGLMM" )
+data( EBS_pollock_data )
 Data_Geostat = data.frame( "Catch_KG"=EBS_pollock_data[,'catch'], "Year"=EBS_pollock_data[,'year'], "Vessel"="missing", "AreaSwept_km2"=0.01, "Lat"=EBS_pollock_data[,'lat'], "Lon"=EBS_pollock_data[,'long'], "Pass"=0)
 Extrapolation_List = SpatialDeltaGLMM::Prepare_Extrapolation_Data_Fn( Region=Region, strata.limits=strata.limits )
 Spatial_List = SpatialDeltaGLMM::Spatial_Information_Fn( grid_size_km=grid_size_km, n_x=n_x, Method=Method, Lon=Data_Geostat[,'Lon'], Lat=Data_Geostat[,'Lat'], Extrapolation_List=Extrapolation_List, randomseed=Kmeans_Config[["randomseed"]], nstart=Kmeans_Config[["nstart"]], iter.max=Kmeans_Config[["iter.max"]], DirPath=DateFile, Save_Results=TRUE )
