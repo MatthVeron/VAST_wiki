@@ -7,9 +7,10 @@ Starting with `Version = "VAST_v5_1_0"`, users can estimate species interactions
 settings = make_settings( n_x=n_x, purpose="MICE", Region=Region, n_categories=length(Species_set) )
 
 # Run model
-Fit = fit_model( "settings"=settings, "Lat_i"=Data_Geostat[,'Lat'], "Lon_i"=Data_Geostat[,'Lon'], 
-  "b_i"=Data_Geostat[,'Catch_KG'], "a_i"=Data_Geostat[,'AreaSwept_km2'], "v_i"=as.numeric(Data_Geostat[,'Vessel'])-1,
-  "t_i"=Data_Geostat[,'Year'], "c_i"=Data_Geostat[,'spp']-1, "F_ct"=F_ct, "F_init"=F_init, "run_model"=FALSE )
+Fit = fit_model( "settings"=settings, "Lat_i"=Data_Geostat[,'Lat'], 
+  "Lon_i"=Data_Geostat[,'Lon'], "b_i"=Data_Geostat[,'Catch_KG'], 
+  "a_i"=Data_Geostat[,'AreaSwept_km2'], "v_i"=as.numeric(Data_Geostat[,'Vessel'])-1,
+  "t_i"=Data_Geostat[,'Year'], "c_i"=Data_Geostat[,'spp']-1, "F_ct"=F_ct )
 
 # Plots
 plot_results( fit=Fit, settings=settings )
