@@ -35,3 +35,5 @@ fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'], "Lo
 # Plot results
 plot_results( settings=settings, fit=fit )
 ```
+
+* I note that this result differs somewhat from the result used for backwards-compatibility checks, apparently due to using the wrapper-functions, and I have not tracked down why this difference arises.
