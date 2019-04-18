@@ -4,7 +4,8 @@ Starting with `Version = "VAST_v5_1_0"`, users can estimate species interactions
 
 ```R
 # Get settings
-settings = make_settings( n_x=n_x, purpose="MICE", Region=Region, n_categories=length(Species_set) )
+settings = make_settings( n_x=n_x, purpose="MICE", Region=Region, 
+  n_categories=length(Species_set) )
 
 # Run model
 Fit = fit_model( "settings"=settings, "Lat_i"=Data_Geostat[,'Lat'], 
