@@ -1,0 +1,3 @@
+# Empirical Orthogonal function (EOF) analysis
+
+It is possible to use `VAST` to fit models to physical and/or biological measurements while ordinating across years.  This is a multivariate generalization of EOF analysis, and can be fitted to biomass-sampling data to generate indices of ecosystem variability.  I will post example data once a current paper is accepted for publication, but feel free to email me (James Thorson) directly to discuss the idea earlier.
