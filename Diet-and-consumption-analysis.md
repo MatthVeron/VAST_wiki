@@ -1,0 +1,3 @@
+# Joint models for stomach content, predator biomass, and total consumption
+
+It is possible to use `VAST` to fit models stomach content data.  It is also possible to jointly fit stomach-content and predator biomass-sampling data, and thereby estimate total predator consumption.  We will post code illustrating how to do this once a paper is accepted, and feel free to contact the package author earlier for a draft and example code.
