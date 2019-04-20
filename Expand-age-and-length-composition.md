@@ -36,4 +36,4 @@ fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'], "Lo
 plot_results( settings=settings, fit=fit )
 ```
 
-* I note that this result differs somewhat from the result used for backwards-compatibility checks, apparently due to using the wrapper-functions, and I have not tracked down why this difference arises.
+* Note: this result differs somewhat from the result used for backwards-compatibility checks, due to differences in the k-means locations for knots between earlier reposited results and newer version of `FishStatsUtils`.
