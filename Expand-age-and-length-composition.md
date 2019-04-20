@@ -29,11 +29,14 @@ settings$fine_scale = FALSE
 fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'], "Lon_i"=example$sampling_data[,'Lon'],
   "t_i"=example$sampling_data[,'Year'], "c_i"=as.numeric(example$sampling_data[,"Length_bin"])-1,
   "b_i"=example$sampling_data[,'First_stage_expanded_numbers'],
-  "a_i"=example$sampling_data[,'AreaSwept_km2'], model_args=list("Npool"=20),
-  newtonsteps=0, optimize_args=list("getsd"=FALSE) )
+  "a_i"=example$sampling_data[,'AreaSwept_km2'], model_args=list("Npool"=40),
+  newtonsteps=1 )
 
 # Plot results
-plot_results( settings=settings, fit=fit )
+results = plot_results( settings=settings, fit=fit )
+
+# Calculate proportions
+proportions = calculate_proportion( TmbData=fit$data_list, Index=results$Index, Year_Set=fit$year_labels )
 ```
 
-* Note: this result differs somewhat from the result used for backwards-compatibility checks, due to differences in the k-means locations for knots between earlier reposited results and newer version of `FishStatsUtils`.
+Note: this code yields a slightly different result from those used for backwards-compatibility checks, due to differences in the k-means locations for knots between earlier reposited results and newer version of `FishStatsUtils`. Also, using `"Npool"=20` using the newer k-means results in a noninvertible Hessian, so I here use `"Npool"=40` instead.
