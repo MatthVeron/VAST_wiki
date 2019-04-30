@@ -54,7 +54,7 @@ for( bI in 1:dim(Speed_rxcb)[4] ){
     "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=example$sampling_data[,'Vessel'] )
 
   # Record run-time
-  Speed_rxcb[rI,xI,cI,bI] = as.numeric( fit$parameter_estimates$time_for_run )
+  Speed_rxcb[rI,xI,cI,bI] = as.double( fit$parameter_estimates$time_for_run, units="mins")
 
   # Save
   save( Speed_rxcb, file="Speed_rxcb.RData" )
