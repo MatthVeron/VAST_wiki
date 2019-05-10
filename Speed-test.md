@@ -3,9 +3,8 @@
 When developing new features, I try to check how changes affect speed for estimating parameters and conducting bias-correction.  Below, I show code for doing this using the simplified user-interface (in this case using the AFSC virtual machine):
 
 ```R
-# Download development branch (or perhaps master branch in future releases)
-devtools::install_github("james-thorson/VAST", ref="development")
-devtools::install_github("james-thorson/FishStatsUtils", ref="development")
+# Download release number 3.0.0; its useful for reproducibility to use a specific release number
+devtools::install_github("james-thorson/VAST", ref="3.0.0")
 
 # Set local working directory (change for your machine)
 setwd( "C:/Users/james.thorson.vm/Desktop/Speed_test" )
