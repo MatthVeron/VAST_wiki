@@ -3,9 +3,8 @@
 I here demonstrate my efforts to develop high-level functions to simplify running `VAST` for several common model purposes.  At time of writing, this requires installing the development branch of `FishStatsUtils`, although future releases will include this code in the master branch and I may forget to update this page.
 
 ```R
-# Download development branch (or perhaps master branch in future releases)
-devtools::install_github("james-thorson/VAST", ref="development")
-devtools::install_github("james-thorson/FishStatsUtils", ref="development")
+# Download release number 3.0.0; its useful for reproducibility to use a specific release number
+devtools::install_github("james-thorson/VAST", ref="3.0.0")
 
 # Set local working directory (change for your machine)
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-03 -- Making helper functions for VAST" )
