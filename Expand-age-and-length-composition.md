@@ -5,7 +5,6 @@ It is possible to use `VAST` to expand subsamples of age/length composition obta
 ```R
 # Download development branch (or perhaps master branch in future releases)
 devtools::install_github("james-thorson/VAST")
-devtools::install_github("james-thorson/FishStatsUtils")
 
 # Load packages
 library(TMB)
