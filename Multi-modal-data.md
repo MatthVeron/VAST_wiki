@@ -5,8 +5,8 @@ It is possible to use `VAST` to fit models jointly to different modes (a.k.a. ty
 As a simple example, I show code for combining three data types for red snapper in the Gulf of Mexico (I note that the wrapper functions used here are currently in the development branch of `FishStatsUtils`, and the fine-scaled interpolation in the development branch of `VAST`, but both will be available in the next numbered release):
 
 ```R
-# Download development branch (or perhaps master branch in future releases)
-devtools::install_github("james-thorson/VAST")
+# Download release number 3.0.0; its useful for reproducibility to use a specific release number
+devtools::install_github("james-thorson/VAST", ref="3.0.0")
 
 # Load packages
 library(TMB)
