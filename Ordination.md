@@ -4,8 +4,7 @@ It is possible to use `VAST` to conduct "ordination."  This process estimates a 
 
 ```R
 # Download development branch (or perhaps master branch in future releases)
-devtools::install_github("james-thorson/VAST", ref="development")
-devtools::install_github("james-thorson/FishStatsUtils", ref="development")
+devtools::install_github("james-thorson/VAST")
 
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-04 -- Wrapper function demo for ordination" )
 
