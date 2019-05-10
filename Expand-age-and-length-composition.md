@@ -3,7 +3,7 @@
 It is possible to use `VAST` to expand subsamples of age/length composition obtained during bottom-trawl sampling.  To do so, we first perform first-stage expansion and then fit a spatio-temporal model to those expanded samples:
 
 ```R
-# Download current release
+# Download release number 3.0.0; its useful for reproducibility to use a specific release number
 devtools::install_github("james-thorson/VAST")
 
 # Load packages
