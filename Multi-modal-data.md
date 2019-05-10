@@ -6,8 +6,7 @@ As a simple example, I show code for combining three data types for red snapper 
 
 ```R
 # Download development branch (or perhaps master branch in future releases)
-devtools::install_github("james-thorson/VAST", ref="development")
-devtools::install_github("james-thorson/FishStatsUtils", ref="development")
+devtools::install_github("james-thorson/VAST")
 
 # Load packages
 library(TMB)
