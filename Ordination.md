@@ -3,7 +3,7 @@
 It is possible to use `VAST` to conduct "ordination."  This process estimates a reduced set of axes that collectively explain variability in a data set.  By identifying species that have similar "loadings" for these different axes, ordination can identify species that are similar.  As an example, please see code below.  At time of writing, this requires installing the development branch of FishStatsUtils, although future releases will include this code in the master branch and I may forget to update this page.
 
 ```R
-# Download development branch (or perhaps master branch in future releases)
+# Download current branch
 devtools::install_github("james-thorson/VAST")
 
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-04 -- Wrapper function demo for ordination" )
