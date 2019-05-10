@@ -25,8 +25,8 @@ cbind( summary(Opt$SD,"fixed"), summary(Opt_new$SD,"fixed") )
 For example, a user can conduct a simulation test for Alaska pollock using the following code
 
 ```R
-# Download from the development branch for now
-devtools::install_github("james-thorson/VAST", ref="development")
+# Download release number 3.0.0; its useful for reproducibility to use a specific release number
+devtools::install_github("james-thorson/VAST", ref="3.0.0")
 
 RootDir = "C:/Users/James.Thorson/Desktop/UW Hideaway/NWFSC/2018-06 -- testing simulate feature/"
 
