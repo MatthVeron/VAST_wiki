@@ -4,7 +4,7 @@ It is possible to use `VAST` to expand subsamples of age/length composition obta
 
 ```R
 # Download release number 3.0.0; its useful for reproducibility to use a specific release number
-devtools::install_github("james-thorson/VAST")
+devtools::install_github("james-thorson/VAST", ref="3.0.0")
 
 # Load packages
 library(TMB)
