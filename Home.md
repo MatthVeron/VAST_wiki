@@ -19,4 +19,4 @@ Current members are:
 * Jim Thorson
 * Christine Stawitz
 * Jim Ianelli
-* 4th member TBD
+* Eric Ward
