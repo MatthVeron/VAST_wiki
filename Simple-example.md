@@ -29,7 +29,7 @@ fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
   "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=example$sampling_data[,'Vessel'] )
 
 # Plot results
-plot( fit=fit )
+plot( fit )
 ```
 
 This should provide an abundance index for whichever species is chosen in `load_example`, which loads Alaska pollock in the eastern Bering Sea by default. To use `VAST` with a new data set, input new data in the same format as example data and see `Data_Fn` for more details.
