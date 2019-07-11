@@ -54,5 +54,5 @@ fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
   "X_gtp"=X_gtp, "X_itp"=X_itp, "Xconfig_zcp"=Xconfig_zcp )
 
 # Plot results
-plot( fit )
+plot( fit, plot_set=c(3,13,14) )
 ```
