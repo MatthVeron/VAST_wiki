@@ -1,8 +1,7 @@
 VAST allows users to specify density covariates, and current format requires input `X_gtp` (for covariates all extrapolation-grid cells `g`) and `X_itp` (for all observations `i`). By default, VAST assumes that every covariate has a linear effect, but users can use polynomial (or other forms of) basis expansion to represent nonlinear effects -- I show a quadratic effect below.  Users can also use input `Xconfig_zcp` to specify other covariate effects, including zero-centered or non-centered spatially varying responses to covariates, or turning off individual covariates;  these decisions are made separately for both model linear predictors. See `?make_data` for details regarding input formats.  Below is a simple example of these features
 
 ```R
-
-# Download development release for now to access example; its useful for reproducibility to use a specific release number
+# Download release number 3.0.0; its useful for reproducibility to use a specific release number
 devtools::install_github("james-thorson/FishStatsUtils", ref="development")
 
 # Set local working directory (change for your machine)
@@ -31,12 +30,18 @@ X_ip = as.matrix(example$sampling_data[, dimnames(X_gtp)[[3]] ])
 # Expand to expected size of input
 X_itp = aperm( outer(X_ip, rep(1,dim(X_gtp)[2])), perm=c(1,3,2) )
 
+# Standardize for numerical stability using same conversion for both
+for( p in 1:dim(X_itp)[3] ){
+  X_itp[,,p] = (X_itp[,,p] - mean(X_gtp[,,p])) / sd(X_gtp[,,p])
+  X_gtp[,,p] = (X_gtp[,,p] - mean(X_gtp[,,p])) / sd(X_gtp[,,p])
+}
+
 # Add quadratic temperature for demonstration purposes
 X_gtp = abind( X_gtp, "BtmTemp-squared"=X_gtp[,,'BtmTemp',drop=FALSE]^2, along=3 )
 X_itp = abind( X_itp, "BtmTemp-squared"=X_itp[,,'BtmTemp',drop=FALSE]^2, along=3 )
 
 # Renumber years to have same indexing as covariates
-t_i = match( example$sampling_data[,'Year'], sort(unique(example$sampling_data[,'Year'])) )
+t_i = match( example$sampling_data[,'Year'], unique(example$sampling_data[,'Year']) )
 
 #### Make Xconfig_zcp, using arbitrary decisions for illustration
 # By default, linear effect for each variable
@@ -51,8 +56,9 @@ fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
   "Lon_i"=example$sampling_data[,'Lon'], "t_i"=t_i,
   "c_i"=rep(0,nrow(example$sampling_data)), "b_i"=example$sampling_data[,'Catch_KG'],
   "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=example$sampling_data[,'Vessel'],
-  "X_gtp"=X_gtp, "X_itp"=X_itp, "Xconfig_zcp"=Xconfig_zcp )
+  "X_gtp"=X_gtp, "X_itp"=X_itp, "Xconfig_zcp"=Xconfig_zcp, optimize_args=list("getsd"=FALSE),
+  "test_fit"=FALSE )
 
-# Plot results
+# Plot esults
 plot( fit, plot_set=c(3,13,14) )
 ```
