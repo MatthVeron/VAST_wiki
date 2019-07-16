@@ -64,7 +64,7 @@ Spatial_List = make_spatial_info( grid_size_km=grid_size_km, n_x=n_x, Method=Met
 Data_Geostat = cbind( Data_Geostat, "knot_i"=Spatial_List$knot_i )
 
 # Some settings
-Nrep = 1
+Nrep = 10
 Year_Set = seq(min(Data_Geostat[,'Year']),max(Data_Geostat[,'Year']))
 Years2Include = which( Year_Set %in% sort(unique(Data_Geostat[,'Year'])))
 
@@ -78,11 +78,16 @@ Report_orig = Obj_orig$report()
 Save_orig = list("Opt"=Opt_orig, "Report"=Report_orig, "ParHat"=Obj_orig$env$parList(Opt_orig$par), "Data"=Data_orig)
 save(Save_orig, file=paste0(DateFile,"Save_orig.RData"))
 
+# Change some values to demonstrate capacity to change operating model
+Par = Obj_orig$env$last.par.best
+# Double decorrelation distance
+Par[c("logkappa1","logkappa2")] = Par[c("logkappa1","logkappa2")] - log(2)
+
 # Loop through OM
 for( rI in 1:Nrep ){
   Keep = FALSE
   while( Keep==FALSE ){
-    Data_sim = Obj_orig$simulate( complete=TRUE )
+    Data_sim = Obj_orig$simulate( par=Par, complete=TRUE )
     Enc_t = tapply( Data_sim$b_i, INDEX=Data_orig$t_i, FUN=function(vec){mean(vec>0)})
     if( all(Enc_t>0 & Enc_t<1) ) Keep = TRUE
   }
@@ -95,7 +100,7 @@ for( rI in 1:Nrep ){
   RhoConfig = c("Beta1"=0, "Beta2"=0, "Epsilon1"=0, "Epsilon2"=0)
   ObsModel = c(2,0)
 
-  Data_new = make_data("b_i"=Data_sim$b_i, "Version"=Version, "FieldConfig"=FieldConfig, "OverdispersionConfig"=OverdispersionConfig, "RhoConfig"=RhoConfig, "ObsModel"=ObsModel, "c_i"=rep(0,nrow(Data_Geostat)), "a_i"=Data_Geostat[,'AreaSwept_km2'], "v_i"=as.numeric(Data_Geostat[,'Vessel'])-1, "s_i"=Data_Geostat[,'knot_i']-1, "t_i"=Data_Geostat[,'Year'], "a_xl"=Spatial_List$a_xl, "MeshList"=Spatial_List$MeshList, "GridList"=Spatial_List$GridList, "Method"=Spatial_List$Method, "Options"=Options )
+  Data_new = make_data("b_i"=Data_sim$b_i, "Version"=Version, "FieldConfig"=FieldConfig, "OverdispersionConfig"=OverdispersionConfig, "RhoConfig"=RhoConfig, "ObsModel"=ObsModel, "c_i"=rep(0,nrow(Data_Geostat)), "a_i"=Data_Geostat[,'AreaSwept_km2'], "v_i"=as.numeric(Data_Geostat[,'Vessel'])-1, "s_i"=Data_Geostat[,'knot_i']-1, "t_i"=Data_Geostat[,'Year'], "spatial_list"=Spatial_List, "Options"=Options )
   TmbList_new = make_model("TmbData"=Data_new, "RunDir"=DateFile, "Version"=Version, "RhoConfig"=RhoConfig, "loc_x"=Spatial_List$loc_x, "Method"=Method)
   Obj_new = TmbList_new[["Obj"]]
 
