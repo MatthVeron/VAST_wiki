@@ -1,23 +1,41 @@
 # Estimating species interactions using a spatial Model of Intermediate Complexity
 
-Starting with `Version = "VAST_v5_1_0"`, users can estimate species interactions similar to how it is done in package MIST (R package available [here](https://github.com/James-Thorson/MIST)).  This can be done using the simplified wrapper functions:
+Starting with `Version = "VAST_v5_1_0"`, users can estimate species interactions similar to how it is done in package MIST (R package available [here](https://github.com/James-Thorson/MIST)).  This can be done using the simplified wrapper functions (although you made need the development version to access the reposited data and example output):
 
 ```R
+# load libraries
+library(VAST)
+
+# load data
+example = load_example( "GOA_MICE_example" )
+
 # Get settings
-settings = make_settings( n_x=n_x, purpose="MICE", Region=Region, 
-  n_categories=length(Species_set) )
+settings = make_settings( n_x=50, purpose="MICE", Region=example$Region,
+  n_categories=nlevels(example$sampling_data$spp) )
+
+# Modify defaults
+settings$VamConfig['Rank'] = 1  # Reduce to single axis of ratio-dependent interactions
+settings$fine_scale = FALSE  # Make it run faster
+
+# Load previous estimates to speed it up
+  # Requires loading the previous Kmeans results to get identical results
+test_path = file.path(system.file("extdata", package="VAST"),"GOA_MICE_example")
+load( file.path(test_path,"saved_estimates.RData") )
 
 # Run model
-Fit = fit_model( "settings"=settings, "Lat_i"=Data_Geostat[,'Lat'], 
-  "Lon_i"=Data_Geostat[,'Lon'], "b_i"=Data_Geostat[,'Catch_KG'], 
-  "a_i"=Data_Geostat[,'AreaSwept_km2'], "v_i"=as.numeric(Data_Geostat[,'Vessel'])-1,
-  "t_i"=Data_Geostat[,'Year'], "c_i"=Data_Geostat[,'spp']-1, "F_ct"=F_ct )
+  # May take many hours, even given informative starting value
+Fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
+  "Lon_i"=example$sampling_data[,'Lon'], "b_i"=example$sampling_data[,'Catch_KG'],
+  "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=as.numeric(example$sampling_data[,'Vessel']),
+  "t_i"=example$sampling_data[,'Year'], "c_i"=as.numeric(example$sampling_data[,'spp'])-1, "F_ct"=example$F_ct,
+  "newtonsteps"=0, optimize_args=list("getsd"=FALSE, "startpar"=parameter_estimates$par),
+  "working_dir"=test_path )
 
 # Plots
 plot_results( fit=Fit, settings=settings )
 ```
 
-Alternatively, it can be fitted using lower-level functions as shown below.  The MICE in space model is only possible when using a Poisson-link delta model (`ObsModel[2]=1`), and is done by including a new, optional input to `Data_Fn`:
+Alternatively, it can be fitted using lower-level functions .  The MICE in space model is only possible when using a Poisson-link delta model (`ObsModel[2]=1`), and is done by including a new, optional input `VamConfig` to `Data_Fn`:
 
 ```R
 # Interaction settings
@@ -38,22 +56,3 @@ where `Rank` represents the number of "axes of regulation" that are apparent in 
 2.  Do you want to estimate partial regulation (reduced rank for the interaction matrix)?  If yes, then consider turning on some temporal structure on spatio-temporal variation, i.e., autoregressive (`RhoConfig[3]=4`) or random-walk structure (`RhoConfig[3]=2`).
 
 3.  Do you want to model additional variation beyond what is explained by interactions?  Then perhaps turn on spatial, spatio-temporal, or variation in intercepts for the 2nd linear predictor.  
-
-# Big picture conclusions
-
-So far I have done some limited testing of the new "interactions" feature.  A few conclusions:
-
-1.  I get identical parameter estimates and marginal likelihood when using Timing=0 (`VamConfig[3]==0`) or Timing=1 (`VamConfig[3]=1`).  Timing=0 seems slightly faster and also easier to compare with `VAST` model results without interactions.  So I recommend using Timing=0 by default.
-
-2.  I also get very similar parameter estimates to package `MIST` when using:
-
-```R
-# Settings to be similar to MIST
-VamConfig = c("Method"=1, "Rank"=Rank, "Timing"=0)
-FieldConfig = c("Omega1"="IID", "Epsilon1"=Nspecies, "Omega2"=0, "Epsilon2"=0)
-RhoConfig = c("Beta1"=3, "Beta2"=3, "Epsilon1"=4, "Epsilon2"=0)
-```
-
-so this seems like a good starting point.
-
-3.  Simulation testing suggests that `VAST` gives unbiased estimates of interaction sign and strength when simulation tested using the simulator from MIST ([here](https://github.com/James-Thorson/MIST/blob/master/R/Sim_Fn.R))
