@@ -31,6 +31,10 @@ Fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
   "newtonsteps"=0, optimize_args=list("getsd"=FALSE, "startpar"=parameter_estimates$par),
   "working_dir"=test_path )
 
+# Fix issue in auto-generated plot labels
+Fit$year_labels = c( 1983, Fit$year_labels )
+Fit$years_to_plot = c(1, Fit$years_to_plot+1)
+
 # Plots
 plot_results( fit=Fit, settings=settings )
 ```
