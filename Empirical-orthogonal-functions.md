@@ -1,0 +1,3 @@
+# Empirical Orthogonal Function (EOF) analysis for biological data
+
+It is possible to use `VAST` to fit a generalization of empirical orthogonal function (EOF) analysis, while accounting for the noisy, zero-inflated and multivariate data that we have in fisheries.  We will post code illustrating how to do this once a paper is accepted, and feel free to contact the package author earlier for a draft and example code.
