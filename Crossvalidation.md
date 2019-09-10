@@ -32,7 +32,7 @@ Partition_i = sample( 1:n_fold, size=nrow(example$sampling_data), replace=TRUE )
 prednll_f = rep(NA, n_fold )
 
 # Loop through partitions, refitting each time with a different PredTF_i
-for( fI %in% 1:n_fold ){
+for( fI in 1:n_fold ){
   PredTF_i = ifelse( Partition_i==fI, TRUE, FALSE )
 
   # Refit, starting at MLE, without calculating standard errors (to save time)
