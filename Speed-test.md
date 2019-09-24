@@ -76,7 +76,7 @@ models
 and show how to do it with a VAST model.
 
 The first step is to download and install the Intel vtune tool
-[here]([https://software.intel.com/en-us/vtune/choose-download#standalone). Then
+[here](https://software.intel.com/en-us/vtune/choose-download#standalone). Then
 add the executable folder to your environmental path, which on my machine
 is `C:\Program Files (x86)\IntelSWTools\VTune Amplifier 2019\bin64`. Check
 it is in your path by opening a command window and running `where
