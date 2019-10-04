@@ -4,7 +4,7 @@ I here demonstrate my efforts to develop high-level functions to simplify runnin
 
 ```R
 # Download release number 3.0.0; its useful for reproducibility to use a specific release number
-devtools::install_github("james-thorson/VAST", ref="3.0.0")
+devtools::install_github("james-thorson/VAST")
 
 # Set local working directory (change for your machine)
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-03 -- Making helper functions for VAST" )
