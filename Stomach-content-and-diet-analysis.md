@@ -10,6 +10,7 @@ which entails that the estimated biomass (the product of biomass per unit area a
 
 ```R
 ######## Download release number 3.2.2; it is useful for reproducibility to use a specific release number
+devtools::install_github( "james-thorson-noaa/FishStatsUtils", ref="2.4.0" )
 devtools::install_github( "james-thorson-noaa/VAST", ref="3.2.2" )
 
 ######## Load packages
