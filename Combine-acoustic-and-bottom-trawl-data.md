@@ -1,0 +1,3 @@
+It is possible to use VAST to fit models jointly to data that arises from a combination of different categories.  This arises naturally in many situations, e.g., where individuals are sometimes identified to species and other times to genus (such that the density for each genus is the sum of densities across modeled species), when ages are subsampled for some bottom-trawl tows but not others, etc.  
+
+We will update this example once a demonstration paper led by Cole Monnahan is accepted.
