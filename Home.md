@@ -18,5 +18,5 @@ Updates to `VAST` will be planned with input from a Steering Committee.  The Ste
 Current members are:
 * Jim Thorson
 * Christine Stawitz
-* Jim Ianelli
+* Cole Monnahan
 * Eric Ward
