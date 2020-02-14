@@ -28,7 +28,7 @@ Fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
   "Lon_i"=example$sampling_data[,'Lon'], "b_i"=example$sampling_data[,'Catch_KG'],
   "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=as.numeric(example$sampling_data[,'Vessel']),
   "t_i"=example$sampling_data[,'Year'], "c_i"=as.numeric(example$sampling_data[,'spp'])-1, "F_ct"=example$F_ct,
-  "newtonsteps"=0, optimize_args=list("getsd"=FALSE, "startpar"=parameter_estimates$par),
+  "newtonsteps"=0, "getsd"=FALSE, "startpar"=parameter_estimates$par,
   "working_dir"=test_path )
 
 # Fix issue in auto-generated plot labels
