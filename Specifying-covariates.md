@@ -4,9 +4,6 @@ By default, VAST assumes that every covariate has a linear effect, but users can
 
 ```R
 
-# Install development branch for now to access example data in right format
-devtools::install_github( "james-thorson/FishStatsUtils" )
-
 # Set local working directory (change for your machine)
 setwd( "C:/Users/James.Thorson/Desktop/Work files/AFSC/2019-09 -- Formula interface" )
 
