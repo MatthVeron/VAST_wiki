@@ -22,7 +22,8 @@ settings = make_settings( n_x=100, Region=example$Region, purpose="index", use_a
   strata.limits=example$strata.limits, bias.correct=FALSE, fine_scale=TRUE ) #, ObsModel=c(1,0) )
 
 # Define formula.  In this case I'm demonstrating how to use a basis-spline with 
-# three degrees of freedom to model a nonlinear effect of log-transformed bottom depth.
+# three degrees of freedom to model a nonlinear effect of log-transformed bottom depth, 
+# based on example developed by Nicholas Ducharme-Barth.
 formula = ~ bs( log(BOT_DEPTH), knots=3, intercept=FALSE)
 
 # set Year = NA to treat all covariates as "static" (not changing among years)
