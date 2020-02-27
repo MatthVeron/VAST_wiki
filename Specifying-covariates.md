@@ -8,8 +8,9 @@ By default, VAST assumes that every covariate has a linear effect, but users can
 setwd( "C:/Users/James.Thorson/Desktop/Work files/AFSC/2019-09 -- Formula interface" )
 
 # Load packages
-library(TMB)
+install.packages("splines")
 library(VAST)
+library(splines)
 
 # load data set
 # see `?load_example` for list of stocks with example data
@@ -20,8 +21,9 @@ example = load_example( data_set="covariate_example" )
 settings = make_settings( n_x=100, Region=example$Region, purpose="index", use_anisotropy=FALSE,
   strata.limits=example$strata.limits, bias.correct=FALSE, fine_scale=TRUE ) #, ObsModel=c(1,0) )
 
-# Define formula
-formula = ~ BOT_DEPTH + I(BOT_DEPTH^2)
+# Define formula.  In this case I'm demonstrating how to use a basis-spline with 
+# three degrees of freedom to model a nonlinear effect of log-transformed bottom depth.
+formula = ~ bs( log(BOT_DEPTH), knots=3, intercept=FALSE)
 
 # set Year = NA to treat all covariates as "static" (not changing among years)
 # If using a mix of static and dynamic covariates, please email package author to add easy capability
