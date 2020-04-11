@@ -11,10 +11,9 @@ Opt = TMBhelper::Optimize( obj=Obj )
 Sim = Obj$simulate( complete=TRUE )
 ```
 
-You can then fit this new data set easily and compare results with your original fit. In the following I load the development branch to use the function `FishStatsUtils::simulate_data(.)`, which will be added to the main branch in FishStatsUtils release number 2.6.0. 
+You can then fit this new data set easily and compare results with your original fit. In the following I load the development branch to use the function `FishStatsUtils::simulate_data(.)`, which was added in FishStatsUtils release number 2.6.0. 
 ```R
-devtools::install_github( "James-Thorson-NOAA/FishStatsUtils", ref="development" )
-devtools::install_github( "James-Thorson-NOAA/VAST", ref="development" )
+devtools::install_github( "James-Thorson-NOAA/VAST", ref="3.4.0" )
 
 # Define working directory for saving files
 working_dir = "C:/Users/James.Thorson/Desktop/Work files/AFSC/2020-02 -- Test simulate_data/"
