@@ -41,6 +41,7 @@ results = plot( fit,
 plot_factors( Report=fit$Report,
   ParHat=fit$ParHat,
   Data=fit$data_list,
-  mapdetails_list=results$map_list )
+  mapdetails_list=results$map_list,
+  Year_Set=fit$year_labels )
 ```
 
