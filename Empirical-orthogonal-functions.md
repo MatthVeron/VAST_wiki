@@ -22,7 +22,8 @@ example = load_example( data_set="five_species_ordination" )
 settings = make_settings( n_x=50,
   Region=example$Region,
   purpose="EOF2",
-  n_categories=2 )
+  n_categories=2,
+  ObsModel=c(1,1) )
 
 # Run model
 fit = fit_model( "settings"=settings,
