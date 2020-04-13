@@ -23,7 +23,8 @@ settings = make_settings( n_x=50,
   Region=example$Region,
   purpose="EOF2",
   n_categories=2,
-  ObsModel=c(1,1) )
+  ObsModel=c(1,1),
+  RhoConfig=c("Beta1"=0,"Beta2"=0,"Epsilon1"=0,"Epsilon2"=0) )
 
 # Run model
 fit = fit_model( "settings"=settings,
