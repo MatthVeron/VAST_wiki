@@ -35,9 +35,10 @@ fit = fit_model( "settings"=settings,
   "b_i"=example$sampling_data[,'Catch_KG'],
   "a_i"=example$sampling_data[,'AreaSwept_km2'] )
 
-# Plot results
+# Plot results, including spatial term Omega1
 results = plot( fit,
-  check_residuals=FALSE )
+  check_residuals=FALSE,
+  plot_set=c(3,15) )
 
 # Plot factor representation
 plot_factors( Report=fit$Report,
