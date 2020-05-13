@@ -31,7 +31,6 @@ fit = fit_model( settings = settings,
   c_i = as.numeric(example$sampling_data[,'Category'])-1,
   b_i = example$sampling_data[,'Response_variable'],
   a_i = example$sampling_data[,'AreaSwept_km2'],
-  v_i = example$sampling_data[,'Vessel'],
   Q_ik = as.matrix(example$sampling_data[, "logLength_lncm"]),
   Expansion_cz = Expansion_cz,
   knot_method = "grid" )
