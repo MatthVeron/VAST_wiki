@@ -21,7 +21,7 @@ settings = make_settings( n_x = 50,
   Region = example$Region,
   purpose = "condition_and_density",
   bias.correct = FALSE )
-Expansion_cz = matrix( c( 0, 1, 0, 0 ), nrow=2, ncol=2 )
+Expansion_cz = matrix( c( 0, 2, 0, 0 ), nrow=2, ncol=2 )
 
 # Run model
 fit = fit_model( settings = settings,
