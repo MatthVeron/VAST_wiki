@@ -9,8 +9,7 @@ devtools::install_github("james-thorson/VAST")
 # Set local working directory (change for your machine)
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-03 -- Making helper functions for VAST" )
 
-# Load packages
-library(TMB)               
+# Load package
 library(VAST)
 
 # load data set
