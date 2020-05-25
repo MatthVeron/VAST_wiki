@@ -8,7 +8,6 @@ By default, VAST assumes that every covariate has a linear effect, but users can
 setwd( "C:/Users/James.Thorson/Desktop/Work files/AFSC/2019-09 -- Formula interface" )
 
 # Load packages
-install.packages("splines")
 library(VAST)
 library(splines)
 
@@ -18,11 +17,15 @@ library(splines)
 example = load_example( data_set="covariate_example" )
 
 # Make settings (turning off bias.correct to save time for example)
-settings = make_settings( n_x=100, Region=example$Region, purpose="index", use_anisotropy=FALSE,
-  strata.limits=example$strata.limits, bias.correct=FALSE, fine_scale=TRUE ) #, ObsModel=c(1,0) )
+settings = make_settings( n_x=100,
+  Region=example$Region,
+  purpose="index",
+  use_anisotropy=FALSE,
+  bias.correct=FALSE,
+  fine_scale=TRUE )
 
-# Define formula.  In this case I'm demonstrating how to use a basis-spline with 
-# three degrees of freedom to model a nonlinear effect of log-transformed bottom depth, 
+# Define formula.  In this case I'm demonstrating how to use a basis-spline with
+# three degrees of freedom to model a nonlinear effect of log-transformed bottom depth,
 # based on example developed by Nicholas Ducharme-Barth.
 formula = ~ bs( log(BOT_DEPTH), knots=3, intercept=FALSE)
 
@@ -34,11 +37,17 @@ example$covariate_data[,'Year'] = NA
 example$covariate_data[,'BOT_DEPTH'] = example$covariate_data[,'BOT_DEPTH'] / 100
 
 # Run model
-fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
-  "Lon_i"=example$sampling_data[,'Lon'], "t_i"=example$sampling_data[,'Year'],
-  "b_i"=example$sampling_data[,'Catch_KG'], "a_i"=example$sampling_data[,'AreaSwept_km2'],
-  "formula"=formula, "covariate_data"=example$covariate_data )
+fit = fit_model( "settings" = settings,
+  Lat_i = example$sampling_data[,'Lat'],
+  Lon_i = example$sampling_data[,'Lon'],
+  t_i = example$sampling_data[,'Year'],
+  b_i = example$sampling_data[,'Catch_KG'],
+  a_i = example$sampling_data[,'AreaSwept_km2'],
+  formula = formula,
+  covariate_data = example$covariate_data )
 
 #
-plot( fit, plot_set=c(3,11,13,14), TmbData=fit$data_list )
+plot( fit, 
+  plot_set=c(3,11,13,14), 
+  TmbData=fit$data_list )
 ```
