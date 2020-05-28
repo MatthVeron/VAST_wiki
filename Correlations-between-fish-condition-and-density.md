@@ -64,5 +64,6 @@ fit = fit_model( settings = settings,
 
 # standard plots
 plot( fit,
+  Yrange=c(NA,NA),
   category_names=c("Biomass","Condition (grams per cm^power)") )
 ```
