@@ -5,7 +5,7 @@ Here, we demonstrate our approach for the Pacific cod (Gadus macrocephalus) popu
 
 Grüss, A., Gao, J., Thorson, J.T., Rooper, C., Thompson, G., Boldt, J. and Lauth, R. (2020) Estimating synchronous changes in condition and density in Eastern Bering Sea fishes. Marine Ecology Progress Series.
 
-One key step for the estimation of density-dependent fish condition is the definition of the `Expansion_cz` object. In our case: ` Expansion_cz = matrix( c( 0, 1, 0, 0 ), nrow = 2, ncol = 2 )` which specifies that the predicted local abundance (the product of annual density and surface area) will be multiplied by the estimated annual condition to obtain annual indices of density-dependent fish condition. 
+One key step for the estimation of density-dependent fish condition is the definition of the `Expansion_cz` object. In our case: ` Expansion_cz = matrix( c( 0,0, 2,0 ), ncol = 2, byrow=TRUE )` which specifies that the annual index fish condition will be calculated as the weighted average of local condition, weighted by local densities. 
 
 ```R
 # Load packages
@@ -14,26 +14,53 @@ library( VAST )
 # load data set
 # see `?load_example` for list of stocks with example data
 # that are installed automatically with `FishStatsUtils`.
-example = load_example( data_set = "condition_and_density" )
+example = load_example( data_set = "goa_arrowtooth_condition_and_density" )
+
+# Format data
+b_i = ifelse( !is.na(example$sampling_data[,'cpue_kg_km2']),
+  example$sampling_data[,'cpue_kg_km2'],
+  example$sampling_data[,'weight_g'] )
+c_i = ifelse( !is.na(example$sampling_data[,'cpue_kg_km2']), 0, 1 )
+Q_i = ifelse(!is.na(example$sampling_data[,'cpue_kg_km2']),
+  0, log(example$sampling_data[,'length_mm']/10) )
 
 # Make settings
-settings = make_settings( n_x = 50,
+settings = make_settings( n_x = 250,
   Region = example$Region,
   purpose = "condition_and_density",
-  bias.correct = FALSE )
-Expansion_cz = matrix( c( 0, 2, 0, 0 ), nrow=2, ncol=2 )
+  bias.correct = FALSE,
+  knot_method = "grid" )
+settings$FieldConfig[c("Omega","Epsilon"),"Component_1"] = "IID"
+Expansion_cz = matrix( c( 0,0, 2,0 ), ncol=2, byrow=TRUE )
+settings$ObsModel = matrix( c(2,4, 1,4), ncol=2, byrow=TRUE )
 
 # Run model
 fit = fit_model( settings = settings,
-  Lat_i = example$sampling_data[,'Lat'],
-  Lon_i = example$sampling_data[,'Lon'],
-  t_i = example$sampling_data[,'Year'],
-  c_i = as.numeric(example$sampling_data[,'Category'])-1,
-  b_i = example$sampling_data[,'Response_variable'],
-  a_i = example$sampling_data[,'AreaSwept_km2'],
-  Q_ik = as.matrix(example$sampling_data[, "logLength_lncm"]),
+  Lat_i = example$sampling_data[,'latitude'],
+  Lon_i = example$sampling_data[,'longitude'],
+  t_i = example$sampling_data[,'year'],
+  c_i = c_i,
+  b_i = b_i,
+  a_i = rep(1, nrow(example$sampling_data)),
+  Q_ik = matrix(Q_i, ncol=1),
   Expansion_cz = Expansion_cz,
-  knot_method = "grid" )
+  build_model = FALSE )
+
+# Modify Map
+Map = fit$tmb_list$Map
+  Map$lambda2_k = factor(NA)
+
+# Run model
+fit = fit_model( settings = settings,
+  Lat_i = example$sampling_data[,'latitude'],
+  Lon_i = example$sampling_data[,'longitude'],
+  t_i = example$sampling_data[,'year'],
+  c_i = c_i,
+  b_i = b_i,
+  a_i = rep(1, nrow(example$sampling_data)),
+  Q_ik = matrix(Q_i, ncol=1),
+  Expansion_cz = Expansion_cz,
+  Map = Map )
 
 # Inspect sample size for each data type
 Nsamp_tc = tapply( example$sampling_data[,'Response_variable'],
