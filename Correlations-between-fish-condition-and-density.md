@@ -1,7 +1,7 @@
 # Joint model for fish condition and density
 We developed a multivariate spatio-temporal modeling approach that simultaneously jointly estimates population density (measured as numbers per area) and fish condition (the relative weight of an individual fish given its body length); the model is then used to predict density-weighted average condition by summing over the product of population density, local condition, and surface area. Density-weighted average condition corrects for biases that would arise when condition (weight-at-length) samples are not distributed proportional to population densities.  Our approach treats both density and condition as “categories” in VAST, and accounts for density-dependent condition by estimating a correlation between population density and condition. 
 
-Here, we demonstrate our approach for the Pacific cod (Gadus macrocephalus) population of the eastern Bering Sea for 1982-2016. The model developed here does not include any environmental covariates, but is simplified from Grüss et al. (2020). 
+Here, we demonstrate our approach for the arrowtooth flounder stock in the Gulf of Alaska. The model developed here does not include any environmental covariates, but is simplified from Grüss et al. (2020). 
 
 Grüss, A., Gao, J., Thorson, J.T., Rooper, C., Thompson, G., Boldt, J. and Lauth, R. (2020) Estimating synchronous changes in condition and density in Eastern Bering Sea fishes. Marine Ecology Progress Series.
 
@@ -62,17 +62,7 @@ fit = fit_model( settings = settings,
   Expansion_cz = Expansion_cz,
   Map = Map )
 
-# Inspect sample size for each data type
-Nsamp_tc = tapply( example$sampling_data[,'Response_variable'],
-  INDEX = list( example$sampling_data[,'Year'], example$sampling_data[,'Category'] ),
-  FUN=length )
-fit$years_to_plot = which( rowSums( is.na( Nsamp_tc ) ) == 0 )
-
-# Produce and plot an abundance index and a density-dependent fish condition index
-Index = plot_biomass_index( DirName = paste0( getwd(),"/" ),
-  TmbData = fit$data_list,
-  Sdreport = fit$parameter_estimates$SD,
-  Year_Set = fit$year_labels,
-  Years2Include = fit$years_to_plot,
-  category_names = c( "Abundance", "Fish condition" ) )
+# standard plots
+plot( fit,
+  category_names=c("Biomass","Condition (grams per cm^power)") )
 ```
