@@ -53,3 +53,12 @@ plot_factors( Report=fit$Report,
   Year_Set=fit$year_labels )
 ```
 
+However, as with any multivariate model this model may take a long time (hours-days) to fit.  If this is happening please try one or more ways to simplify the problem:
+
+* Use fewer extrapolation-grid cells.  With recent versions of VAST, this can be done e.g., using `max_cells=1000` for 1000 extrapolation-grid cells.
+* Use fewer factors, via decreasing `FieldConfig` in `make_data(.)` and/or `n_categories` in `make_settings(.)`
+* Use fewer knots, via decreasing `n_x` in `make_settings(.)`
+* Use fewer categories and/or years of data
+* Eliminate bias-correction and/or run without getting standard errors.  
+* Get access to a better computer
+* Use MRAN for windows, or other version of R that uses parallelization.
