@@ -14,7 +14,7 @@ library( VAST )
 # load data set
 # see `?load_example` for list of stocks with example data
 # that are installed automatically with `FishStatsUtils`.
-example = load_example( data_set = "goa_arrowtooth_condition_and_density" )
+example = load_example( data_set = "GOA_arrowtooth_condition_and_density" )
 
 # Format data
 b_i = ifelse( !is.na(example$sampling_data[,'cpue_kg_km2']),
