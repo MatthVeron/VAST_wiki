@@ -4,7 +4,7 @@ Based on feedback from the community of users, as well as discussions with the s
 
 | Change | Rationale| Link for details |
 | ------------- | ------------- | ------------- |
-| Explore onStepPredict(.) for delta models  | Allow better use of probability-integral-transform diagnostics  | |
+| Explore oneStepPredict(.) for delta models  | Allow better use of probability-integral-transform diagnostics  | |
 | Add formula interface for X1 and X2 separately, and modify CPP, make_data, and Xconfig_zcp to allow its use  | Simplify user interface for covariates in delta model | | 
 | Add plots for marginal or partial dependence of covariates | Simplify user interface and model exploration | https://github.com/James-Thorson-NOAA/VAST/issues/240#event-3486935522 | 
 | Add formula interface for Q1 and Q2 separately, and modify CPP, make_data to allow its use  | Simplify user interface for catchability covariates in delta model | | 
