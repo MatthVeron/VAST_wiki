@@ -1,4 +1,4 @@
-# Development priorities
+# List of development priorities and rationale
 
 Based on feedback from the community of users, as well as discussions with the steering committee, we will attempt to update a list of future development priorities here.
 
