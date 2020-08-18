@@ -67,3 +67,55 @@ plot( fit,
   Yrange=c(NA,NA),
   category_names=c("Biomass","Condition (grams per cm^power)") )
 ```
+
+alternatively, it is possible to run a similar analysis just on condition (weight and length) data, as shown below.  The density maps are unlikely to differ greatly, but this could be useful for comparison with other methods.  Of course, only analyzing condition data precludes doing density-weighting when calculating an annual index of condition.
+
+```R
+# Load packages
+library( VAST )
+
+# load data set
+example = load_example( data_set = "GOA_arrowtooth_condition_and_density" )
+
+# Make settings
+settings = make_settings( n_x = 250,
+  Region = example$Region,
+  purpose = "index",
+  bias.correct = FALSE,
+  knot_method = "grid",
+  ObsModel = c(1,4) )
+
+# Only use condition data
+condition_data = example$sampling_data
+  condition_data = subset( condition_data, is.na(cpue_kg_km2) )
+
+# Run model
+fit = fit_model( settings = settings,
+  Lat_i = condition_data[,'latitude'],
+  Lon_i = condition_data[,'longitude'],
+  t_i = condition_data[,'year'],
+  b_i = condition_data[,'weight_g'],
+  a_i = rep(1, nrow(condition_data)),
+  Q_ik = matrix(log(condition_data[,'length_mm']/10), ncol=1),
+  build_model = FALSE )
+
+# Modify Map
+Map = fit$tmb_list$Map
+  Map$lambda2_k = factor(NA)
+
+# Run model
+fit = fit_model( settings = settings,
+  Lat_i = condition_data[,'latitude'],
+  Lon_i = condition_data[,'longitude'],
+  t_i = condition_data[,'year'],
+  b_i = condition_data[,'weight_g'],
+  a_i = rep(1, nrow(condition_data)),
+  Q_ik = matrix(log(condition_data[,'length_mm']/10), ncol=1),
+  Map = Map,
+  test_fit = FALSE,
+  getsd = FALSE )
+
+# standard plots
+plot( fit,
+  Yrange=c(NA,NA) )
+```
