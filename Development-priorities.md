@@ -7,7 +7,6 @@ Based on feedback from the community of users, as well as discussions with the s
 | ------------- | ------------- | ------------- |
 | Explore oneStepPredict(.) for delta models  | Allow better use of probability-integral-transform diagnostics  | |
 | Add plots for marginal or partial dependence of covariates | Simplify user interface and model exploration | https://github.com/James-Thorson-NOAA/VAST/issues/240#event-3486935522 | 
-| Add formula interface for X1 and X2 separately, and modify CPP, make_data, and Xconfig_zcp to allow its use  | Simplify user interface for covariates in delta model | | 
 | Add generalized lognormal-gamma distribution | Explore for improved performance w.r.t. diagnostics and index scale | | 
 | Add climate velocity as automated output based on raster of density predictions | Additional interpretation of existing outputs | https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13295 | 
 | Add Hurlbert and other additional overlap metrics | Additional flexibility in multivariate modelling | https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12984 | 
@@ -18,10 +17,4 @@ Based on feedback from the community of users, as well as discussions with the s
 | Add option to specify correlations based on traits for each category c | |
 
 ### Completed development priorities
-We will also list changes that were made, listing their release number
-
-| Change | Rationale| Link for details |
-| ------------- | ------------- | ------------- |
-| Add formula interface for Q1 and Q2 separately, and modify CPP, make_data to allow its use  | Simplify user interface for catchability covariates in delta model | VAST 3.6.0 | 
-| Add Q1config_cp and Q2config_cp to allow spatially varying catchability response | Allow for spatially varying gear performance estimation | VAST 3.6.0 | 
-
+Please consult the [NEWS document](https://github.com/James-Thorson-NOAA/VAST/blob/master/manual/NEWS.pdf) for a list of previous releases, listing features satisfying previous development priorities.  
