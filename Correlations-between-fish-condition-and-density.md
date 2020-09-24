@@ -21,8 +21,8 @@ b_i = ifelse( !is.na(example$sampling_data[,'cpue_kg_km2']),
   example$sampling_data[,'cpue_kg_km2'],
   example$sampling_data[,'weight_g'] )
 c_i = ifelse( !is.na(example$sampling_data[,'cpue_kg_km2']), 0, 1 )
-Q_i = ifelse(!is.na(example$sampling_data[,'cpue_kg_km2']),
-  0, log(example$sampling_data[,'length_mm']/10) )
+catchability_data = data.frame( "length_cm" = ifelse(!is.na(example$sampling_data[,'cpue_kg_km2']),
+  1, example$sampling_data[,'length_mm']/10 ))
 
 # Make settings
 settings = make_settings( n_x = 250,
@@ -42,25 +42,9 @@ fit = fit_model( settings = settings,
   c_i = c_i,
   b_i = b_i,
   a_i = rep(1, nrow(example$sampling_data)),
-  Q_ik = matrix(Q_i, ncol=1),
-  Expansion_cz = Expansion_cz,
-  build_model = FALSE )
-
-# Modify Map
-Map = fit$tmb_list$Map
-  Map$lambda2_k = factor(NA)
-
-# Run model
-fit = fit_model( settings = settings,
-  Lat_i = example$sampling_data[,'latitude'],
-  Lon_i = example$sampling_data[,'longitude'],
-  t_i = example$sampling_data[,'year'],
-  c_i = c_i,
-  b_i = b_i,
-  a_i = rep(1, nrow(example$sampling_data)),
-  Q_ik = matrix(Q_i, ncol=1),
-  Expansion_cz = Expansion_cz,
-  Map = Map )
+  catchability_data = catchability_data,
+  Q2_formula= ~ log(length_cm),
+  Expansion_cz = Expansion_cz )
 
 # standard plots
 plot( fit,
