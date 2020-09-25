@@ -2,7 +2,7 @@
 
 It is possible to use `VAST` to fit models jointly to different modes (a.k.a. types) of data, including encounter/non-encounter, count, and biomass-sampling data.  Combining data from different sampling designs can be useful to expand the spatial footprint beyond that covered by any one sampling program.
 
-As a simple example, I show code for combining three data types for red snapper in the Gulf of Mexico (I note that the wrapper functions used here are currently in the development branch of `FishStatsUtils`, and the fine-scaled interpolation in the development branch of `VAST`, but both will be available in the next numbered release):
+As a simple example, I show code for combining three data types for red snapper in the Gulf of Mexico:
 
 ```R
 # Download release number 3.6.0; its useful for reproducibility to use a specific release number
