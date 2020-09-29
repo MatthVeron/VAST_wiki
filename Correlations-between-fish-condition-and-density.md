@@ -44,7 +44,7 @@ fit = fit_model( settings = settings,
   a_i = rep(1, nrow(example$sampling_data)),
   catchability_data = catchability_data,
   Q2_formula= ~ log(length_cm),
-  #Q2config_k = c(2), # Potential switch to make allometric weight-length a spatially varying term
+  #Q2config_k = c(3), # Potential switch to make allometric weight-length a spatially varying term
   Expansion_cz = Expansion_cz )
 
 # standard plots
