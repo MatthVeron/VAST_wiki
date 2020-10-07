@@ -15,6 +15,7 @@ Based on feedback from the community of users, as well as discussions with the s
 | Add options to automatically query publicly available data to population `covariate_data` to use in formula interface | Facilitate exploring covariates for introductory users |  
 | Merge with EOFR package by adding optional new input that is correlated with EOF axis | Facilitate exploration of spatial drivers for population dynamics | 
 | Add option to specify correlations based on traits for each category c | |
+| Implement structural equation modelling features via covariance matrix specification | |
 
 ### Completed development priorities
 Please consult the [NEWS document](https://github.com/James-Thorson-NOAA/VAST/blob/master/manual/NEWS.pdf) for a list of previous releases, listing features satisfying previous development priorities.  
