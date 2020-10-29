@@ -36,5 +36,5 @@ fit = fit_model( settings = settings,
   a_i = example$sampling_data[,'AreaSwept_km2'] )
 
 # Plot results
-results = plot( fit=fit )
+results = plot( fit )
 ```
