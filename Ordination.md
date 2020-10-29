@@ -4,12 +4,11 @@ It is possible to use `VAST` to conduct "ordination."  This process estimates a 
 
 ```R
 # Download release number 3.0.0; its useful for reproducibility to use a specific release number
-devtools::install_github("james-thorson/VAST", ref="3.0.0")
+devtools::install_github("james-thorson/VAST", ref="3.6.0")
 
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-04 -- Wrapper function demo for ordination" )
 
 # Load packages
-library(TMB)
 library(VAST)
 
 # load data set
@@ -18,17 +17,24 @@ library(VAST)
 example = load_example( data_set="five_species_ordination" )
 
 # Make settings
-settings = make_settings( n_x=100, Region=example$Region, purpose="ordination",
-  strata.limits=example$strata.limits, n_categories=2 )
+settings = make_settings( n_x = 100, 
+  Region = example$Region, 
+  purpose = "ordination",
+  strata.limits = example$strata.limits, 
+  n_categories = 2 )
 
 # Change settings from defaults
 settings$RhoConfig[c('Beta1','Beta2')] = 2
 
 # Run model
-fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'], "Lon_i"=example$sampling_data[,'Lon'],
-  "t_i"=example$sampling_data[,'Year'], "c_i"=as.numeric(example$sampling_data[,"species_number"])-1,
-  "b_i"=example$sampling_data[,'Catch_KG'], "a_i"=example$sampling_data[,'AreaSwept_km2'] )
+fit = fit_model( settings = settings, 
+  Lat_i = example$sampling_data[,'Lat'], 
+  Lon_i = example$sampling_data[,'Lon'],
+  t_i = example$sampling_data[,'Year'], 
+  c_i = as.numeric(example$sampling_data[,"species_number"])-1,
+  b_i = example$sampling_data[,'Catch_KG'], 
+  a_i = example$sampling_data[,'AreaSwept_km2'] )
 
 # Plot results
-results = plot_results( settings=settings, fit=fit )
+results = plot( fit=fit )
 ```
