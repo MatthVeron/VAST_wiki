@@ -4,7 +4,7 @@ I here demonstrate my efforts to develop high-level functions to simplify runnin
 
 ```R
 # Download latest release number; its useful for reproducibility to use a specific release number
-devtools::install_github("james-thorson/VAST")
+devtools::install_github("James-Thorson-NOAA/VAST")
 
 # Set local working directory (change for your machine)
 setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-03 -- Making helper functions for VAST" )
@@ -20,7 +20,7 @@ example = load_example( data_set="EBS_pollock" )
 # Make settings (turning off bias.correct to save time for example)
 settings = make_settings( n_x=100, 
   Region=example$Region, 
-  purpose="index", 
+  purpose="index2", 
   strata.limits=example$strata.limits, 
   bias.correct=FALSE )
 
