@@ -43,7 +43,7 @@ fit = fit_model( settings=settings,
 # Plot results, including spatial term Omega1
 results = plot( fit,
   check_residuals=FALSE,
-  plot_set=c(3,15) )
+  plot_set=c(3,16) )
 
 # Plot factor representation
 plot_factors( Report=fit$Report,
