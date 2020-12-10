@@ -1,4 +1,4 @@
-Example applications:
+**Example applications:**
 1. [Basic example](https://github.com/James-Thorson-NOAA/VAST/wiki/Simple-example)
 1. [Empirical Orthogonal Functions](https://github.com/James-Thorson-NOAA/VAST/wiki/Empirical-orthogonal-functions)
 1. [Ordination using joint species distribution model](https://github.com/James-Thorson-NOAA/VAST/wiki/Ordination)
@@ -10,11 +10,12 @@ Example applications:
 1. [Multispecies model of interactions](https://github.com/James-Thorson-NOAA/VAST/wiki/MICE-in-space)
 1. [Stream network models](https://github.com/James-Thorson-NOAA/VAST/wiki/Spatio-temporal-stream-network-models)
 
-Usage demos:
+**Usage demos:**
 * [Adding covariates](https://github.com/James-Thorson-NOAA/VAST/wiki/Specifying-covariates)
+* [Create a new extrapolation grid](https://github.com/James-Thorson-NOAA/VAST/wiki/Creating-an-extrapolation-grid)
 * [K-fold crossvalidation](https://github.com/James-Thorson-NOAA/VAST/wiki/Crossvalidation)
 * [Simulating new data](https://github.com/James-Thorson-NOAA/VAST/wiki/Simulator)
 
-Project structure and utilities:
+**Project structure and utilities:**
 * [Development priorities](https://github.com/James-Thorson-NOAA/VAST/wiki/Development-priorities)
 * [Speed testing](https://github.com/James-Thorson-NOAA/VAST/wiki/Speed-test)
