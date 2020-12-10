@@ -4,9 +4,10 @@ It is possible to use `VAST` to conduct "ordination."  This process estimates a 
 
 ```R
 # Download release number 3.0.0; its useful for reproducibility to use a specific release number
-devtools::install_github("james-thorson/VAST", ref="3.6.0")
+devtools::install_github("james-thorson-NOAA/VAST")
 
-setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-04 -- Wrapper function demo for ordination" )
+# Decide where to run and save results
+#setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-04 -- Wrapper function demo for ordination" )
 
 # Load packages
 library(VAST)
