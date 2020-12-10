@@ -6,7 +6,7 @@ As a simple example, I show code for combining three data types for red snapper 
 
 ```R
 # Download release number 3.6.0; its useful for reproducibility to use a specific release number
-devtools::install_github("james-thorson/VAST", ref="3.6.0")
+devtools::install_github("James-Thorson-NOAA/VAST", ref="3.6.0")
 
 # Load packages
 library(VAST)
