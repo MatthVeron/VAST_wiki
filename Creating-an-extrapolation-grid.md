@@ -9,7 +9,7 @@ However, combining these two tasks requires the user to pre-specify the spatial 
 ### An example of how to create user-defined extrapolation
 ### regions (extents) for VAST.
 
-### Cecilia O'leary and Cole Monnahan | December 2020
+### Cecilia O'Leary and Cole Monnahan | December 2020
 
 ### The extrapolation region defines the extent over which the
 ### model predictions are integrated. Any density outside of this
@@ -68,8 +68,7 @@ sps@proj4string <- crs_LL
 
 
 ### --------------------------------------------------
-### Method 2: Get it from an existing shapefile. Needed are .shp,
-### .dbf, .shx files.
+### Method 2: Get it from an existing shapefile.
 library(rgdal) # '1.5.18'
 shp <- readOGR("nbs_strata.shp", layer="nbs_strata")
 sps <- spTransform(shp, CRS("+proj=longlat +lat_0=90 +lon_0=180 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0 "))
@@ -104,7 +103,6 @@ region_grid_sp@data <- over(region_grid, region_polygon)
 
 ## Convert back to lon/lat coordinates as that is what VAST uses
 region_grid_LL <- as.data.frame(spTransform(region_grid_sp, crs_LL))
-## grid1 <- as.data.frame(grid1) #confirm it's still a data frame
 region_df <- with(region_grid_LL,
                   data.frame(Lon=coords.x1,
                              Lat=coords.x2, Id,
@@ -154,3 +152,4 @@ fit <- fit_model(settings=settings,
                  input_grid=user_region)
 plot_results(fit, plot_set=3)
 ```
+
