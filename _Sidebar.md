@@ -18,4 +18,5 @@
 
 **Project structure and utilities:**
 * [Development priorities](https://github.com/James-Thorson-NOAA/VAST/wiki/Development-priorities)
+* [Development workflow](https://github.com/James-Thorson-NOAA/VAST/wiki/Development-workflow-for-contributions)
 * [Speed testing](https://github.com/James-Thorson-NOAA/VAST/wiki/Speed-test)
