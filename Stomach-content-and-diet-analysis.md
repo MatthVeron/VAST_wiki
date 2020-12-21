@@ -1,11 +1,11 @@
  # Joint model for stomach content, predator biomass catch rate, and predator-expanded-stomach-contents (PESCs)
 
-We developed an approach that fits a spatio-temporal model with `VAST` to both prey-biomass-per-predator-biomass data (i.e., the ratio of prey biomass in stomachs to predator weight) and predator biomass catch rate data (predator biomass per unit area), to predict “predator-expanded-stomach-contents” (PESC; the product of prey-biomass-per-predator-biomass, predator biomass per unit area, and surface area). The PESC estimates can be used to visualize either the annual landscape of PESC (spatio-temporal variation), or can be aggregated across space to calculate annual variation in diet proportions (variation among prey items and among years). 
+We developed an approach that fits a spatio-temporal model with `VAST` to both prey-biomass-per-predator-mass data (i.e., the ratio of prey biomass in stomachs to predator weight) and predator biomass catch rate data (predator biomass per unit area), to predict “predator-expanded-stomach-contents” (PESC; the product of prey-biomass-per-predator-biomass, predator biomass per unit area, and surface area). The PESC estimates can be used to visualize either the annual landscape of PESC (spatio-temporal variation), or can be aggregated across space to calculate annual variation in diet proportions (variation among prey items and among years). 
 
 Here, we demonstrate our approach in a data-limited situation involving West Florida Shelf red grouper (Epinephelus morio, Epinephelidae) for 2011-2015. Four prey items are considered: crabs, fish, shrimps, and “other prey”. We demonstrate how diet proportions are calculated from the PESCs estimated by our model. 
 
 One key step for the estimation of PESCs is the definition of the `Expansion_cz` object. In our case:
-`Expansion_cz = matrix( c(0,1,1,1,1,0,0,0,0,0), nrow = nlevels(example$sampling_data[,"spp"]), ncol = 2 )`
+`Expansion_cz = matrix( c( 0, 1, 1, 1, 1, 0, 0, 0, 0, 0 ), nrow = nlevels( sampling_data[,"spp"] ), ncol = 2 )`
 which entails that the estimated biomass (the product of biomass per unit area and surface area) for the first “category”, namely the predator (red grouper), will be multiplied by the estimated biomasses for the other categories, namely the prey items (crabs, fish, other prey, and shrimps), to obtain PESC estimates (for crabs, fish, other prey, and shrimps). 
 
 ```R
@@ -31,7 +31,7 @@ names( example$Predator_biomass_cath_rate_data )[4] <- "Response_variable"
 #### Modify the stomach content dataset. Specifically:
 #### (1) Create a new "predator-biomass-per-predator-mass" variable (in g per g of predator), by dividing
 #### prey biomass (in g) by predator mass (in g)
-#### (2) Rename the "Prey_item" field into "Category" (levels: Crabs, Fish, Shrimps, and Other) - to allow for 
+#### (2) Rename the "Prey_item" field into "Category" (levels: "Crabs", "Fish", "Shrimps", and "Other") - to allow for 
 #### the merging of the predator biomass catch rate and stomach content datasets 
 #### (3) Reorder the columns of the dataset - to allow for 
 #### the merging of the predator biomass catch rate and stomach content datasets 
