@@ -22,25 +22,33 @@ example = load_example( data_set = "PESC_example_red_grouper" )
 
 # Modify the predator biomass catch rate dataset. Specifically:
 # (1) Assign a new "Category" field to the dataset (with the unique level "Red_grouper")
+example$Predator_biomass_cath_rate_data$Category = as.factor( "Red_grouper" )
 # (2) Rename the "CPUE_kg_km2" field into "Response_variable" - to allow for
 # the merging of the predator biomass catch rate and stomach content datasets
-example$Predator_biomass_cath_rate_data$Category = as.factor( "Red_grouper" )
 names( example$Predator_biomass_cath_rate_data )[4] <- "Response_variable"
+# Note that a_i = 1 because `Response_variable` is already KG per KM^2; Future
+# applications could instead treate `Response_variable` as KG and use `a_i` as
+# area swept
 
 # Modify the stomach content dataset. Specifically:
 # (1) Create a new "predator-biomass-per-predator-mass" variable (in g per g of predator), by dividing
 # prey biomass (in g) by predator mass (in g)
-# (2) Rename the "Prey_item" field into "Category" (levels: "Crabs", "Fish", "Shrimps", and "Other") - to allow for
-# the merging of the predator biomass catch rate and stomach content datasets
-# (3) Reorder the columns of the dataset - to allow for
-# the merging of the predator biomass catch rate and stomach content datasets
-# (4) Rename the "predator-biomass-per-predator-mass" field into "Response_variable" - to allow for
-# the merging of the predator biomass catch rate and stomach content datasets
 example$Stomach_content_data$Prey_biomass_per_predator_mass <- example$Stomach_content_data$Prey_biomass_in_stomach_g /
 	example$Stomach_content_data$Predator_mass_g
+# (2) Rename the "Prey_item" field into "Category" (levels: "Crabs", "Fish", "Shrimps", and "Other") - to allow for
+# the merging of the predator biomass catch rate and stomach content datasets
 example$Stomach_content_data$Category <- as.factor( example$Stomach_content_data$Prey_item )
+# (3) Reorder the columns of the dataset - to allow for
+# the merging of the predator biomass catch rate and stomach content datasets
 example$Stomach_content_data <- example$Stomach_content_data[,c( 1 : 3, 8, 7, 9 )]
+# (4) Rename the "predator-biomass-per-predator-mass" field into "Response_variable" - to allow for
+# the merging of the predator biomass catch rate and stomach content datasets
 names( example$Stomach_content_data )[4] <- "Response_variable"
+# (5) Change a_i = 1, because `Response_variable` is already prey-G per predator-G, such that
+# product of c=0 and c = {1,2,3,4} has units KG
+example$Stomach_content_data$Area_swept_km2 = 1
+# Note that future applications could instead treat
+# `Response_variable` as prey-biomass and `a_i` as predator-body-size
 
 # Merge the predator biomass catch rate and stomach content datasets
 sampling_data <- rbind( example$Predator_biomass_cath_rate_data, example$Stomach_content_data )
@@ -77,12 +85,12 @@ fit = fit_model( settings = settings,
     Lat_i = sampling_data[,'Lat'],
     Lon_i = sampling_data[,'Lon'],
     t_i = as.numeric( sampling_data[,'Year'] ),
-    c_i = as.numeric( sampling_data[,"Category"] ) - 1,
+    c_i = as.numeric( sampling_data[,'Category'] ) - 1,
     b_i = sampling_data[,'Response_variable'],
     a_i = sampling_data[,'Area_swept_km2'],
     Expansion_cz = Expansion_cz,
     input_grid = example$input_grid,
-    knot_method = "grid",
+    knot_method = 'grid',
     Npool = 20,
     newtonsteps = 1,
     getsd = TRUE,
