@@ -5,7 +5,9 @@ We developed an approach that fits a spatio-temporal model with `VAST` to both p
 Here, we demonstrate our approach in a data-limited situation involving West Florida Shelf red grouper (Epinephelus morio, Epinephelidae) for 2011-2015. Four prey items are considered: crabs, fish, shrimps, and “other prey”. We demonstrate how diet proportions are calculated from the PESCs estimated by our model. 
 
 One key step for the estimation of PESCs is the definition of the `Expansion_cz` object. In our case:
+
 `Expansion_cz = matrix( c( 0, 1, 1, 1, 1, 0, 0, 0, 0, 0 ), nrow = nlevels( sampling_data[,"spp"] ), ncol = 2 )`
+
 which entails that the estimated biomass (the product of biomass per unit area and surface area) for the first “category”, namely the predator (red grouper), will be multiplied by the estimated biomasses for the other categories, namely the prey items (crabs, fish, other prey, and shrimps), to obtain PESC estimates (for crabs, fish, other prey, and shrimps). 
 
 ```R
