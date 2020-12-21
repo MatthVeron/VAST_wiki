@@ -73,20 +73,20 @@ Expansion_cz = matrix( byrow = TRUE,
             1, 0 ) )
 
 # Run the model
-fit = fit_model( "settings" = settings,
-    "Lat_i" = sampling_data[,'Lat'],
-    "Lon_i" = sampling_data[,'Lon'],
-    "t_i" = as.numeric( sampling_data[,'Year'] ),
-    "c_i" = as.numeric( sampling_data[,"Category"] ) - 1,
-    "b_i" = sampling_data[,'Response_variable'],
-    "a_i" = sampling_data[,'Area_swept_km2'],
-    "Expansion_cz" = Expansion_cz,
-    "input_grid" = example$input_grid,
-    "knot_method" = "grid",
-    "Npool" = 20,
-    "newtonsteps" = 1,
-    "getsd" = TRUE,
-    "test_fit" = FALSE )
+fit = fit_model( settings = settings,
+    Lat_i = sampling_data[,'Lat'],
+    Lon_i = sampling_data[,'Lon'],
+    t_i = as.numeric( sampling_data[,'Year'] ),
+    c_i = as.numeric( sampling_data[,"Category"] ) - 1,
+    b_i = sampling_data[,'Response_variable'],
+    a_i = sampling_data[,'Area_swept_km2'],
+    Expansion_cz = Expansion_cz,
+    input_grid = example$input_grid,
+    knot_method = "grid",
+    Npool = 20,
+    newtonsteps = 1,
+    getsd = TRUE,
+    test_fit = FALSE )
 
 # Calculate and plot diet proportions
 Index = plot_biomass_index( DirName = paste0( getwd(), "/" ),
