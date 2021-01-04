@@ -10,6 +10,9 @@ One key step for the estimation of PESCs is the definition of the `Expansion_cz`
 
 which entails that the estimated biomass (the product of biomass per unit area and surface area) for the first “category”, namely the predator (red grouper), will be multiplied by the estimated prey-biomass-per-predator-biomass for the other categories, namely the prey items (crabs, fish, other prey, and shrimps), to obtain PESC estimates (for crabs, fish, other prey, and shrimps). 
 
+For more information about the approach and its outcomes, please read: 
+Grüss A, Thorson JT, Carroll G, Ng EL, Holsman KK, Aydin K, Kotwicki S, Morzaria-Luna HM, Ainsworth CH, Thompson KA (2020). Spatio-temporal analyses of marine predator diets from data-rich and data-limited systems. Fish and Fisheries, 21: 718-739.  
+
 ```R
 # Load packages
 # NOTE: currently requires development branch for FishStatsUtils
