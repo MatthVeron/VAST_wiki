@@ -6,7 +6,6 @@ Based on feedback from the community of users, as well as discussions with the s
 | Change | Rationale| Link for details |
 | ------------- | ------------- | ------------- |
 | Explore oneStepPredict(.) for delta models  | Allow better use of probability-integral-transform diagnostics  | |
-| Add plots for marginal or partial dependence of covariates | Simplify user interface and model exploration | https://github.com/James-Thorson-NOAA/VAST/issues/240#event-3486935522 | 
 | Add generalized lognormal-gamma distribution | Explore for improved performance w.r.t. diagnostics and index scale | | 
 | Add climate velocity as automated output based on raster of density predictions | Additional interpretation of existing outputs | https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13295 | 
 | Add Hurlbert and other additional overlap metrics | Additional flexibility in multivariate modelling | https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12984 | 
