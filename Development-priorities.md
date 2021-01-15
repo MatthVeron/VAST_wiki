@@ -18,6 +18,7 @@ Based on feedback from the community of users, as well as discussions with the s
 | Add feature to pass through covariate names to outputs for parameter estimates and plotting | |
 | Integrate `units` package to provide automatic error checks and plotting labels | |
 | Add options to use p-splines | Improved statistical efficiency relative to basis-splines that are currently available | 
+| Explore multi-scale correlation functions, via additive function of two Omega GMRFs operating with different kappas | Assimilate within and among-transect locational data better | |
 
 ### Completed development priorities
 Please consult the [NEWS document](https://github.com/James-Thorson-NOAA/VAST/blob/master/manual/NEWS.pdf) for a list of previous releases, listing features satisfying previous development priorities.  
