@@ -9,7 +9,6 @@ Based on feedback from the community of users, as well as discussions with the s
 | Add generalized lognormal-gamma distribution | Explore for improved performance w.r.t. diagnostics and index scale | | 
 | Add climate velocity as automated output based on raster of density predictions | Additional interpretation of existing outputs | https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13295 | 
 | Add Hurlbert and other additional overlap metrics | Additional flexibility in multivariate modelling | https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.12984 | 
-| Add predict S3 method | Improve user interface, e.g., for use when predicting bycatch |
 | Add stepwise AIC model-selection algorithm | Improve user interface when building models | 
 | Add options to automatically query publicly available data to population `covariate_data` to use in formula interface | Facilitate exploring covariates for introductory users |  
 | Merge with EOFR package by adding optional new input that is correlated with EOF axis | Facilitate exploration of spatial drivers for population dynamics | 
