@@ -12,6 +12,7 @@
 
 **Usage demos:**
 * [Adding covariates](https://github.com/James-Thorson-NOAA/VAST/wiki/Specify-covariates-and-visualize-responses)
+* [Visualize covariate response](https://github.com/James-Thorson-NOAA/VAST/wiki/Visualize-covariate-response)
 * [Create a new extrapolation grid](https://github.com/James-Thorson-NOAA/VAST/wiki/Creating-an-extrapolation-grid)
 * [K-fold crossvalidation](https://github.com/James-Thorson-NOAA/VAST/wiki/Crossvalidation)
 * [Simulating new data](https://github.com/James-Thorson-NOAA/VAST/wiki/Simulator)
