@@ -2,9 +2,7 @@ VAST allows users to specify density covariates, with values drawn from `covaria
 
 By default, VAST assumes that every covariate has a linear effect, but users can use polynomial (or other forms of) basis expansion to represent nonlinear effects -- I show a quadratic effect below.  Users can also use input `Xconfig_zcp` to specify other covariate effects, including zero-centered or non-centered spatially varying responses to covariates, or turning off individual covariates;  these decisions are made separately for both model linear predictors. See `?make_data` for details regarding input formats.  Below is a simple example of these features.
 
-VAST has recently added two options to visualize covariate response curves:
-1.  using package `effects` to visualize "conditional" response curves, showing the additive impact of the covariate upon the linear predictors. This does not visualize the effect of spatially varying coefficients, or responses after applying the inverse-link function; 
-2.  using package `pdp` (and interfacing with `predict.fit_model`) to visualize marginal response curves (a.k.a. partial dependence plots), showing the effect of an exogenous change in any covariate for every observation, and then averaging across observations to calculate the marginal effect given the sample covariance among covariates.  This does visualize the effect of spatially varying coefficients, as well as the action of the inverse-link function, but is also relatively slow and can yield a nonparametric (difficult to summarize) response curve even for a parametric functional form.
+VAST also has two options to visualize covariate responses and those are demonstrated elsewhere in the Wiki.
 
 ```R
 # Requires development branch for now
@@ -58,22 +56,6 @@ fit = fit_model( "settings" = settings,
   X1_formula = X1_formula,
   X2_formula = X2_formula,
   covariate_data = example$covariate_data )
-
-# Must add data-frames to global environment (hope to fix in future)
-covariate_data_full = fit$effects$covariate_data_full
-catchability_data_full = fit$effects$catchability_data_full
-
-# Plot 1st linear predictor
-pred = Effect.fit_model( fit,
-  focal.predictors = c("BOT_DEPTH"),
-  which_formula = "X1" )
-plot(pred)
-
-# Plot 2nd linear predictor
-pred = Effect.fit_model( fit,
-  focal.predictors = c("BOT_DEPTH","BOT_TEMP"),
-  which_formula = "X2" )
-plot(pred)
 
 # Standard plots
 plot( fit,
