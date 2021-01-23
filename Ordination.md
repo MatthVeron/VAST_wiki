@@ -38,4 +38,10 @@ fit = fit_model( settings = settings,
 
 # Plot results
 results = plot( fit )
+
+# Plot correlations (showing Omega1 as example)
+require(corrplot)
+Cov_omega1 = fit$Report$L_omega1_cf %*% t(fit$Report$L_omega1_cf)
+corrplot( cov2cor(Cov_omega1), method="pie", type="lower")
+corrplot.mixed( cov2cor(Cov_omega1) )
 ```
