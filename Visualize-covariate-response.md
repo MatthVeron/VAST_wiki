@@ -54,7 +54,8 @@ catchability_data_full = fit$effects$catchability_data_full
 # Plot 1st linear predictor
 pred = Effect.fit_model( fit,
   focal.predictors = c("CPE"),
-  which_formula = "X1" )
+  which_formula = "X1",
+  xlevels = 100 )
 plot(pred)
 
 #####################
