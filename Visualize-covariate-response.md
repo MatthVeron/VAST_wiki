@@ -51,11 +51,12 @@ library(effects)  # Used to visualize covariate effects
 covariate_data_full = fit$effects$covariate_data_full
 catchability_data_full = fit$effects$catchability_data_full
 
-# Plot 1st linear predictor
+# Plot 1st linear predictor, but could use `transformation` to apply link function
 pred = Effect.fit_model( fit,
   focal.predictors = c("CPE"),
   which_formula = "X1",
-  xlevels = 100 )
+  xlevels = 100,
+  transformation = list(link=identity, inverse=identity) )
 plot(pred)
 
 #####################
