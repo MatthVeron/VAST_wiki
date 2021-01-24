@@ -16,6 +16,7 @@
 * [Create a new extrapolation grid](https://github.com/James-Thorson-NOAA/VAST/wiki/Creating-an-extrapolation-grid)
 * [K-fold crossvalidation](https://github.com/James-Thorson-NOAA/VAST/wiki/Crossvalidation)
 * [Simulating new data](https://github.com/James-Thorson-NOAA/VAST/wiki/Simulator)
+* [Modify defaults for advanced users](https://github.com/James-Thorson-NOAA/VAST/wiki/Modifying-parameters-and-data)
 
 **Project structure and utilities:**
 * [Development priorities](https://github.com/James-Thorson-NOAA/VAST/wiki/Development-priorities)
