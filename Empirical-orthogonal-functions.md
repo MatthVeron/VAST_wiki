@@ -23,7 +23,7 @@ example = load_example( data_set="five_species_ordination" )
 # analysis in original paper
 settings = make_settings( n_x=50,
   Region=example$Region,
-  purpose="EOF2",
+  purpose="EOF3",
   n_categories=2,
   ObsModel=c(1,1),
   RhoConfig=c("Beta1"=0,"Beta2"=0,"Epsilon1"=0,"Epsilon2"=0) )
