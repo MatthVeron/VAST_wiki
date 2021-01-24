@@ -45,12 +45,13 @@ results = plot( fit,
   check_residuals=FALSE,
   plot_set=c(3,16) )
 
-# Plot factor representation
-plot_factors( Report=fit$Report,
-  ParHat=fit$ParHat,
-  Data=fit$data_list,
-  mapdetails_list=results$map_list,
-  Year_Set=fit$year_labels )
+# Plot against cold-pool extent index
+index1 = results$Factors$Rotated_loadings$EpsilonTime1[,1]
+example2 = load_example( data_set="EBS_pollock" )
+CPE = example2$covariate_data[match(fit$year_labels,example2$covariate_data$Year),'AREA_SUM_KM2_LTE2']
+index1 = sign(cor(index1,CPE)) * index1
+matplot( x=fit$year_labels, y=scale(cbind(index1,CPE)),
+  type="l", lty="solid", col=c("blue","black"), lwd=2 )
 ```
 
 However, as with any multivariate model this model may take a long time (hours-days) to fit.  If this is happening please try one or more ways to simplify the problem:
