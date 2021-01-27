@@ -1,6 +1,6 @@
 ## Surplus production models for data-poor species
 
-`VAST` includes features to track fishing mortality `F_ct` for each category and year.  A 1st order autoregressive process is equivalent to Gompertz density dependence, and it is then possible to track the net effect of past and present fishing mortality on current biomass, as well as calculate biomass and fishing mortality reference points (the latter using "spawning potential ratio" F_%SPR metrics).  
+`VAST` includes features to track fishing mortality `F_ct` for each category and year.  A 1st order autoregressive process using a log-link (or Poisson-linked delta model) is equivalent to Gompertz density dependence, and it is then possible to track the net effect of past and present fishing mortality on current biomass, as well as calculate biomass and fishing mortality reference points (the latter using "spawning potential ratio" F_%SPR metrics).  
 
 We show this process in an example below for Gulf of Alaska pollock.  We note that initial fits yielded an implausible value for autocorrelation (and resulting fishing mortality targets).  We have therefore taken the F_40% = 0.281 from the [2019 stock assessment](https://apps-afsc.fisheries.noaa.gov/refm/docs/2019/GOApollock.pdf) and back-calculated the resulting magnitude of first-order autocorrelation, Rho = 0.69.  We then fixed this value during model fits.  
 
