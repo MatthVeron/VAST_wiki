@@ -66,7 +66,7 @@ Fit = fit_model( settings = settings,
 
 # Fix issue in auto-generated plot labels
 Fit$year_labels = c( 1975, Fit$year_labels )
-Fit$years_to_plot = c(1, Fit$years_to_plot+1)
+Fit$years_to_plot = 1:length(Fit$year_labels)  # Plot all years, not just years with samples
 
 # Plots
 plot_results( fit = Fit,
