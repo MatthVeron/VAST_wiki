@@ -8,6 +8,10 @@ This approach could be substantially extended in future applications.  For examp
 * The current approach inputs a fishing mortality `F_ct`, e.g., from a time-series of fishing effort and assumed catchability coefficient within an area-swept estimator. Future developments could instead fit to annual catch data.
 * The software implementation does not allow autocorrelation in both intercepts `beta` and spatio-temporal variation `epsilon`, but this could easily be changed.
 
+For more details see e.g.
+* An extended [version with movement](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2664.12664)
+* An extended [multi-species version]( https://doi.org/10.1111/faf.12398)
+
 ```R
 library(VAST)
 example = load_example( "GOA_MICE_example" )
@@ -39,6 +43,7 @@ Inputs = fit_model( settings = settings,
   F_ct = F_ct,
   build_model = FALSE )
 
+# Map off 1st order autocorrelation
 # F_40 = 0.281
 Map = Inputs$tmb_list$Map
   Map$Epsilon_rho1_f = factor(NA)
@@ -54,9 +59,7 @@ Fit = fit_model( settings = settings,
   a_i = sampling_data[,'AreaSwept_km2'],
   v_i = as.numeric(sampling_data[,'Vessel']),
   t_i = sampling_data[,'Year'],
-  c_i = as.numeric(sampling_data[,'spp'])-1,
   F_ct = F_ct,
-  newtonsteps = 0,
   Map = Map,
   Parameters = Params,
   getsd = TRUE )
@@ -64,4 +67,11 @@ Fit = fit_model( settings = settings,
 # Fix issue in auto-generated plot labels
 Fit$year_labels = c( 1975, Fit$year_labels )
 Fit$years_to_plot = c(1, Fit$years_to_plot+1)
+
+# Plots
+plot_results( fit = Fit,
+  settings = settings,
+  projargs = '+proj=natearth +lon_0=-170 +units=km',
+  check_residuals = FALSE,
+  country = "united states of america" )
 ```
