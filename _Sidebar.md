@@ -7,6 +7,7 @@
 1. [Expand stomach content samples](https://github.com/James-Thorson-NOAA/VAST/wiki/Stomach-content-and-diet-analysis)
 1. [Combine presence/absence, counts, and biomass data](https://github.com/James-Thorson-NOAA/VAST/wiki/Combine-biomass-counts-and-encounter-data)
 1. [Combine acoustic and bottom trawl data](https://github.com/James-Thorson-NOAA/VAST/wiki/Combine-acoustic-and-bottom-trawl-data)
+1. [Surplus production models](https://github.com/James-Thorson-NOAA/VAST/wiki/Surplus-production)
 1. [Multispecies model of interactions](https://github.com/James-Thorson-NOAA/VAST/wiki/MICE-in-space)
 1. [Stream network models](https://github.com/James-Thorson-NOAA/VAST/wiki/Spatio-temporal-stream-network-models)
 
