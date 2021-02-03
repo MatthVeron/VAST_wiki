@@ -2,7 +2,7 @@ VAST allows users to specify density covariates, with values drawn from `covaria
 
 By default, VAST assumes that every covariate has a linear effect, but users can use polynomial (or other forms of) basis expansion to represent nonlinear effects -- I show a quadratic effect below.  Users can also use input `Xconfig_zcp` to specify other covariate effects, including zero-centered or non-centered spatially varying responses to covariates, or turning off individual covariates;  these decisions are made separately for both model linear predictors. See `?make_data` for details regarding input formats.  Below is a simple example of these features.
 
-VAST also has two options to visualize covariate responses and those are demonstrated elsewhere in the Wiki.
+VAST also has two options to visualize covariate responses and those are demonstrated [elsewhere in the Wiki](https://github.com/James-Thorson-NOAA/VAST/wiki/Visualize-covariate-response).
 
 ```R
 # Requires development branch for now
