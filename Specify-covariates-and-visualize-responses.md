@@ -31,7 +31,7 @@ settings = make_settings( n_x=100,
 # In this case I'm demonstrating how to use a basis-spline with
 # three degrees of freedom to model a nonlinear effect of log-transformed bottom depth,
 # based on example developed by Nicholas Ducharme-Barth.
-X1_formula = ~ bs( log(BOT_DEPTH), knots=3, intercept=FALSE)
+X1_formula = ~ bs( log(BOT_DEPTH), degree=2, intercept=FALSE)
 #X1_formula = ~ poly( log(BOT_DEPTH), degree=2 )
 # I'm also showing how to construct an interaction
 X2_formula = ~ poly(log(BOT_DEPTH), degree=2) + poly( BOT_TEMP, degree=2 )
