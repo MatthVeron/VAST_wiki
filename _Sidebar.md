@@ -6,6 +6,7 @@
 1. [Combine condition and biomass data](https://github.com/James-Thorson-NOAA/VAST/wiki/Correlations-between-fish-condition-and-density)
 1. [Expand stomach content samples](https://github.com/James-Thorson-NOAA/VAST/wiki/Stomach-content-and-diet-analysis)
 1. [Combine presence/absence, counts, and biomass data](https://github.com/James-Thorson-NOAA/VAST/wiki/Combine-biomass-counts-and-encounter-data)
+1. [Seasonal and annual variation](https://github.com/James-Thorson-NOAA/VAST/wiki/Seasonal-model)
 1. [Combine acoustic and bottom trawl data](https://github.com/James-Thorson-NOAA/VAST/wiki/Combine-acoustic-and-bottom-trawl-data)
 1. [Surplus production models](https://github.com/James-Thorson-NOAA/VAST/wiki/Surplus-production)
 1. [Multispecies model of interactions](https://github.com/James-Thorson-NOAA/VAST/wiki/MICE-in-space)
