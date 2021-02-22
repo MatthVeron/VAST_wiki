@@ -137,8 +137,7 @@ fit  = fit_model("settings" = settings,
   "Map" = Map_adjust )
 
 #
-plot( fit_seas_form,
-  #projargs = fit$extrapolation_list$projargs,
+plot( fit,
   projargs='+proj=natearth +lon_0=-68 +units=km',
   country = "united states of america",
   year_labels = yearseason_labels )
