@@ -8,6 +8,7 @@ We explore this concept [in detail elsewhere](https://academic.oup.com/icesjms/a
 
 ```R
 # load package and example data
+# For now this requires installing the development branch
 library(VAST)
 example = load_example( data_set="NWA_yellowtail_seasons" )
 
