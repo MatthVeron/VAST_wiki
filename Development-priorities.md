@@ -19,6 +19,7 @@ Based on feedback from the community of users, as well as discussions with the s
 | Add options to use p-splines | Improved statistical efficiency relative to basis-splines that are currently available | 
 | Explore multi-scale correlation functions, via additive function of two Omega GMRFs operating with different kappas | Assimilate within and among-transect locational data better | https://github.com/James-Thorson-NOAA/VAST/issues/273 |
 | Add visual diagnostics interface styled on r4ss | Allow captions to explain what is expected for each diagnostic plot | |
+| Allow distribution across categories for density/catchability covariates | In-line with alternative Joint SDM software, and useful for data-poor species | |
 
 ### Completed development priorities
 Please consult the [NEWS document](https://github.com/James-Thorson-NOAA/VAST/blob/master/manual/NEWS.pdf) for a list of previous releases, listing features satisfying previous development priorities.  
