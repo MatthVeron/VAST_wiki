@@ -7,8 +7,7 @@ In these cases, analysts can use the formula interface to specify covariates tha
 We explore this concept [in detail elsewhere](https://academic.oup.com/icesjms/article-abstract/77/5/1879/5837191), and illustrate a simplified example below.  The use of the formula interface for seasonal models was developed by Andrew Allyn.
 
 ```R
-# load package and example data
-# For now this requires installing the development branch
+# load package and example data (requires VAST release >= 3.7.0)
 library(VAST)
 example = load_example( data_set="NWA_yellowtail_seasons" )
 
