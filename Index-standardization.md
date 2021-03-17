@@ -1,6 +1,6 @@
 # Example of using VAST with high-level wrapper functions
 
-I here demonstrate my efforts to develop high-level functions to simplify running `VAST` for several common model purposes.  At time of writing, this requires installing the development branch of `FishStatsUtils`, although future releases will include this code in the master branch and I may forget to update this page.
+I here demonstrate my efforts to develop high-level functions to simplify running `VAST` for several common model purposes.  The default structure shown here is for "index standardization."
 
 ```R
 # Download latest release number; its useful for reproducibility to use a specific release number
