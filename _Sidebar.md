@@ -1,5 +1,5 @@
 **Example applications:**
-1. [Basic example](https://github.com/James-Thorson-NOAA/VAST/wiki/Simple-example)
+1. [Index standardization](https://github.com/James-Thorson-NOAA/VAST/wiki/Index-standardization)
 1. [Empirical Orthogonal Functions](https://github.com/James-Thorson-NOAA/VAST/wiki/Empirical-orthogonal-functions)
 1. [Ordination using joint species distribution model](https://github.com/James-Thorson-NOAA/VAST/wiki/Ordination)
 1. [Expand length and age-composition samples](https://github.com/James-Thorson-NOAA/VAST/wiki/Expand-age-and-length-composition)
