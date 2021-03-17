@@ -9,7 +9,7 @@
 1. [Seasonal and annual variation](https://github.com/James-Thorson-NOAA/VAST/wiki/Seasonal-model)
 1. [Combine acoustic and bottom trawl data](https://github.com/James-Thorson-NOAA/VAST/wiki/Combine-acoustic-and-bottom-trawl-data)
 1. [Surplus production models](https://github.com/James-Thorson-NOAA/VAST/wiki/Surplus-production)
-1. [Multispecies model of interactions](https://github.com/James-Thorson-NOAA/VAST/wiki/MICE-in-space)
+1. [Multispecies model of biological interactions](https://github.com/James-Thorson-NOAA/VAST/wiki/MICE-in-space)
 1. [Stream network models](https://github.com/James-Thorson-NOAA/VAST/wiki/Spatio-temporal-stream-network-models)
 
 **Usage demos:**
