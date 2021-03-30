@@ -1,5 +1,5 @@
 ## Rationale: Changing axes
-(contributed by Alexa Hermann)
+(contributed by Dr. Alexa Fredston)
 
 By default, VAST uses a mesh of knots that is projected using the UTM coordinate system -- that is, in northings and eastings. 
 
