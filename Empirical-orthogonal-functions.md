@@ -46,7 +46,7 @@ results = plot( fit,
   plot_set=c(3,16) )
 
 # Plot against cold-pool extent index
-index1 = results$Factors$Rotated_loadings$EpsilonTime1[,1]
+index1 = results$Factors$Rotated_loadings$EpsilonTime1[,2]
 example2 = load_example( data_set="EBS_pollock" )
 CPE = example2$covariate_data[match(fit$year_labels,example2$covariate_data$Year),'AREA_SUM_KM2_LTE2']
 index1 = sign(cor(index1,CPE)) * index1
