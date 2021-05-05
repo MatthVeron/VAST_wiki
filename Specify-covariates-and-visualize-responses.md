@@ -5,10 +5,6 @@ By default, VAST assumes that every covariate has a linear effect, but users can
 VAST also has two options to visualize covariate responses and those are demonstrated [elsewhere in the Wiki](https://github.com/James-Thorson-NOAA/VAST/wiki/Visualize-covariate-response).
 
 ```R
-# Requires development branch for now
-devtools::install_github("James-Thorson-NOAA/FishStatsUtils", ref="development")
-devtools::install_github("James-Thorson-NOAA/VAST", ref="development")
-
 # Load packages
 library(VAST)
 library(splines)  # Used to include basis-splines
