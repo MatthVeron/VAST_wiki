@@ -13,9 +13,8 @@ library(tidyr)
 theme_set(theme_bw())
 
 
-### Run a simple VAST model
+### Run a simple VAST model for a few years
 example <- load_example( data_set="EBS_pollock" )
-## just one year
 dat <- subset(example$sampling_data, Year>2008)
 years <- unique(dat$Year)
 nyrs <- length(years)
@@ -67,7 +66,7 @@ names(fit$Report)[grepl('_gc|_gct', x=names(fit$Report))]
 
 D_gt <- fit$Report$D_gct[,1,] # drop the category
 dimnames(D_gt) <- list(cell=1:nrow(D_gt), year=years)
-## Is there a better tidy way to do this? reshape2::melt() does
+## tidy way of doing this, reshape2::melt() does
 ## it cleanly but is deprecated
 D_gt <- D_gt %>% as.data.frame() %>%
     tibble::rownames_to_column(var = "cell") %>%
