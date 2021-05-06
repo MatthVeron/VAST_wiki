@@ -10,8 +10,11 @@ library(VAST)
 example = load_example( "GOA_MICE_example" )
 
 # Get settings
-settings = make_settings( n_x=50, purpose="MICE", Region=example$Region,
-  n_categories=nlevels(example$sampling_data$spp) )
+settings = make_settings( n_x = 50,
+           purpose = "MICE",
+           Region = example$Region,
+           n_categories = nlevels(example$sampling_data$spp) )
+#settings$VamConfig['Timing'] = 0
 
 # Modify defaults
 settings$VamConfig['Rank'] = 1  # Reduce to single axis of ratio-dependent interactions
@@ -24,19 +27,26 @@ load( file.path(test_path,"saved_estimates.RData") )
 
 # Run model
   # May take many hours, even given informative starting value
-Fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
-  "Lon_i"=example$sampling_data[,'Lon'], "b_i"=example$sampling_data[,'Catch_KG'],
-  "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=as.numeric(example$sampling_data[,'Vessel']),
-  "t_i"=example$sampling_data[,'Year'], "c_i"=as.numeric(example$sampling_data[,'spp'])-1, "F_ct"=example$F_ct,
-  "newtonsteps"=0, "getsd"=FALSE, "startpar"=parameter_estimates$par,
-  "working_dir"=test_path )
+Fit = fit_model( settings = settings,
+      Lat_i = example$sampling_data[,'Lat'],
+      Lon_i = example$sampling_data[,'Lon'],
+      b_i = example$sampling_data[,'Catch_KG'],
+      a_i = example$sampling_data[,'AreaSwept_km2'],
+      v_i = as.numeric(example$sampling_data[,'Vessel']),
+      t_i = example$sampling_data[,'Year'],
+      c_i = as.numeric(example$sampling_data[,'spp'])-1,
+      F_ct = example$F_ct,
+      newtonsteps = 0,
+      getsd = FALSE,
+      startpar = parameter_estimates$par,
+      working_dir = test_path )
 
 # Fix issue in auto-generated plot labels
 Fit$year_labels = c( 1983, Fit$year_labels )
 Fit$years_to_plot = c(1, Fit$years_to_plot+1)
 
 # Plots
-plot_results( fit=Fit, settings=settings )
+plot( Fit )
 ```
 
 Alternatively, it can be fitted using lower-level functions .  The MICE in space model is only possible when using a Poisson-link delta model (`ObsModel[2]=1`), and is done by including a new, optional input `VamConfig` to `Data_Fn`:
