@@ -15,7 +15,6 @@ Based on feedback from the community of users, as well as discussions with the s
 | Add option to specify correlations based on traits for each category c | |
 | Implement structural equation modelling features via covariance matrix specification | |
 | Add feature to pass through covariate names to outputs for parameter estimates and plotting | |
-| Integrate `units` package to provide automatic error checks and plotting labels | |
 | Add options to use p-splines | Improved statistical efficiency relative to basis-splines that are currently available | 
 | Explore multi-scale correlation functions, via additive function of two Omega GMRFs operating with different kappas | Assimilate [within and among-transect locational data better](https://github.com/James-Thorson-NOAA/VAST/issues/273) |
 | Add visual diagnostics interface styled on r4ss | Allow captions to explain what is expected for each diagnostic plot | |
