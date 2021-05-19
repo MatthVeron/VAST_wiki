@@ -5,7 +5,8 @@ It is possible to use VAST to fit models that include samples of different categ
 
 This method is demonstrated in:
 
-> Monnahan, C. C., Thorson, J. T., Kotwicki, S., Lauffenburger, N., Ianelli, J. N., and Punt, A. E. 2021. Incorporating vertical distribution in index standardization accounts for spatiotemporal availability to acoustic and bottom trawl gear for semi-pelagic species. ICES Journal of Marine Science.
+> Cole C Monnahan, James T Thorson, Stan Kotwicki, Nathan Lauffenburger, James N Ianelli, Andre E Punt, Incorporating vertical distribution in index standardization accounts for spatiotemporal availability to acoustic and bottom trawl gear for semi-pelagic species, ICES Journal of Marine Science, 2021;, fsab085, https://doi.org/10.1093/icesjms/fsab085
+
 
 The demo below is adapted from that paper and shows fits to simulated data for fish biomass in three vertical layers:
 1. The acoustic dead zone (i.e., 0 to 0.5/3 meters above substrate)
