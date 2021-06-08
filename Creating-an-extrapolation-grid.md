@@ -106,7 +106,7 @@ region_grid_LL <- as.data.frame(spTransform(region_grid_sp, crs_LL))
 region_df <- with(region_grid_LL,
                   data.frame(Lon=coords.x1,
                              Lat=coords.x2, Id,
-                             Area_km2=( (cell_size/1000^2)),
+                             Area_km2=( (cell_size/1000)^2),
                              row=1:nrow(region_grid_LL)))
 ## Filter out the grid that does not overlap (outside extent)
 region <- subset(region_df, !is.na(Id))
