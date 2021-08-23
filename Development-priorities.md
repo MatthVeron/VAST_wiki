@@ -5,6 +5,7 @@ Based on feedback from the community of users, as well as discussions with the s
 
 | Change | Rationale| 
 | ------------- | ------------- | 
+| Add "percent deviance explained" calculation | Allows comparison of VAST and other software using common-currency diagnostic |
 | Explore oneStepPredict(.) for delta models  | Allow better use of probability-integral-transform diagnostics  | 
 | Add generalized lognormal-gamma distribution | Explore for improved performance w.r.t. diagnostics and index scale |  
 | Add climate velocity as automated output based on raster of density predictions | Additional interpretation of existing (outputs)[https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13295] | 
