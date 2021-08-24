@@ -15,6 +15,7 @@
 **Usage demos:**
 * [Adding covariates](https://github.com/James-Thorson-NOAA/VAST/wiki/Specify-covariates-and-visualize-responses)
 * [Visualize covariate response](https://github.com/James-Thorson-NOAA/VAST/wiki/Visualize-covariate-response)
+* [Percent deviance explained](https://github.com/James-Thorson-NOAA/VAST/wiki/Percent-deviance-explained)
 * [Create a new extrapolation grid](https://github.com/James-Thorson-NOAA/VAST/wiki/Creating-an-extrapolation-grid)
 * [Custom maps using ggplot](https://github.com/James-Thorson-NOAA/VAST/wiki/Plots-using-ggplot)
 * [Modify axes for distribution metrics](https://github.com/James-Thorson-NOAA/VAST/wiki/Define-new-axes-for-range-edge-and-centroid)
