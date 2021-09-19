@@ -14,7 +14,7 @@ Based on feedback from the community of users, as well as discussions with the s
 | Merge with EOFR package by adding optional new input that is correlated with EOF axis | Facilitate exploration of spatial drivers for population dynamics | 
 | Add option to specify correlations based on traits for each category c | Likely feasible via formula interface using spatially-varying responses, but requires some investigation|
 | Implement structural equation modelling features via covariance matrix specification | |
-| Add feature to pass through covariate names to outputs for parameter estimates and plotting | |
+| Add feature to pass through covariate names to outputs for parameter estimates and plotting | VAST now passes names for covariates to covariate-arrays in `fit$data_list`, e.g., `fit$data_list$X1_gctp`.  However, it is conceptually difficult to automate the conversion of this to the parameter of coefficients, due to order and mapping used as `map` input. The developers welcome input on default behavior to resolve the conceptual issue.|
 | Add options to use p-splines | Improved statistical efficiency relative to basis-splines that are currently available | 
 | Explore multi-scale correlation functions, via additive function of two Omega GMRFs operating with different kappas | Assimilate [within and among-transect locational data better](https://github.com/James-Thorson-NOAA/VAST/issues/273) |
 | Add visual diagnostics interface styled on r4ss | Allow captions to explain what is expected for each diagnostic plot | |
