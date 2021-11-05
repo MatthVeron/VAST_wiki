@@ -34,7 +34,9 @@ fit = fit_model( settings = settings,
   t_i = example$sampling_data[,'Year'], 
   c_i = as.numeric(example$sampling_data[,"species_number"])-1,
   b_i = example$sampling_data[,'Catch_KG'], 
-  a_i = example$sampling_data[,'AreaSwept_km2'] )
+  a_i = example$sampling_data[,'AreaSwept_km2'],
+  newtonsteps = 0,
+  getsd = FALSE )
 
 # Plot results
 results = plot( fit )
