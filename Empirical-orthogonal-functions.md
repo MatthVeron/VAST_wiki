@@ -43,7 +43,8 @@ fit = fit_model( settings=settings,
 # Plot results, including spatial term Omega1
 results = plot( fit,
   check_residuals=FALSE,
-  plot_set=c(3,16) )
+  plot_set=c(3,16),
+  category_names = c("pollock", "cod", "arrowtooth", "snow_crab", "yellowfin") )
 
 # Plot against cold-pool extent index
 index1 = results$Factors$Rotated_loadings$EpsilonTime1[,2]
