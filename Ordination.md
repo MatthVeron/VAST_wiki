@@ -41,7 +41,9 @@ fit = fit_model( settings = settings,
   getsd = FALSE )
 
 # Plot results
-results = plot( fit )
+results = plot( fit,
+  plot_set = c(3,16,17),
+  category_names = c("pollock", "cod", "arrowtooth", "snow_crab", "yellowfin") )
 
 # Plot correlations (showing Omega1 as example)
 require(corrplot)
