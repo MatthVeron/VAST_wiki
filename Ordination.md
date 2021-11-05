@@ -24,8 +24,10 @@ settings = make_settings( n_x = 100,
   strata.limits = example$strata.limits, 
   n_categories = 2 )
 
-# Change settings from defaults
-settings$RhoConfig[c('Beta1','Beta2')] = 2
+# Modify settings to allow model to run faster for demo 
+settings$FieldConfig['Beta',] = "IID"
+settings$FieldConfig['Epsilon',] = 0
+settings$RhoConfig[] = 0
 
 # Run model
 fit = fit_model( settings = settings, 
