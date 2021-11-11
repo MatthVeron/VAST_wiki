@@ -18,7 +18,7 @@ library(VAST)
 example = load_example( data_set="five_species_ordination" )
 
 # Make settings
-settings = make_settings( n_x = 100, 
+settings = make_settings( n_x = 50, 
   Region = example$Region, 
   purpose = "ordination",
   strata.limits = example$strata.limits, 
