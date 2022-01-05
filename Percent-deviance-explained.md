@@ -36,7 +36,7 @@ run_dir = paste0(getwd(),"/pollock/null/")
 
 # Make settings (turning off bias.correct to save time for example)
 settings0 <- settings1
-settings0$FieldConfig[c("Omega","Epsilon"),] = 0
+settings0$FieldConfig = matrix( c(0,0,0,0,"IID","IID"), byrow=TRUE, ncol=2 )
 settings0$RhoConfig[c("Beta1","Beta2")] = 3
 
 # Run model
