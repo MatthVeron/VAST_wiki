@@ -2,6 +2,7 @@
 1. [Index standardization](https://github.com/James-Thorson-NOAA/VAST/wiki/Index-standardization)
 1. [Empirical Orthogonal Functions](https://github.com/James-Thorson-NOAA/VAST/wiki/Empirical-orthogonal-functions)
 1. [Ordination using joint species distribution model](https://github.com/James-Thorson-NOAA/VAST/wiki/Ordination)
+1. [End-of-century projections](https://github.com/James-Thorson-NOAA/VAST/wiki/Projections)
 1. [Expand length and age-composition samples](https://github.com/James-Thorson-NOAA/VAST/wiki/Expand-age-and-length-composition)
 1. [Combine condition and biomass data](https://github.com/James-Thorson-NOAA/VAST/wiki/Correlations-between-fish-condition-and-density)
 1. [Expand stomach content samples](https://github.com/James-Thorson-NOAA/VAST/wiki/Stomach-content-and-diet-analysis)
