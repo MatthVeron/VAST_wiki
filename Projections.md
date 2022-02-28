@@ -44,5 +44,5 @@ for( rI in 1:100 ){
 # Plot 90% interval for the index
 Index_tq = t(apply(Index_tr, MARGIN=1, FUN=quantile, probs=c(0.1,0.5,0.9) ))
 Index_tq[,2] = apply(Index_tr, MARGIN=1, FUN=mean)
-matplot( y=Index_tq, x=rownames(Index_tq), log="", col="black", lwd=c(1,2,1), type="l", lty="solid" )
+matplot( y=Index_tq, x=rownames(Index_tq), log="y", col="black", lwd=c(1,2,1), type="l", lty="solid" )
 ```
