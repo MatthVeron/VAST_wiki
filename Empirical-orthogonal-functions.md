@@ -53,6 +53,13 @@ CPE = example2$covariate_data[match(fit$year_labels,example2$covariate_data$Year
 index1 = sign(cor(index1,CPE)) * index1
 matplot( x=fit$year_labels, y=scale(cbind(index1,CPE)),
   type="l", lty="solid", col=c("blue","black"), lwd=2 )
+
+# plot bivariate ordination
+index1_tf = results$Factors$Rotated_loadings$EpsilonTime1
+cpe_vf = ecodist::vf(index1_tf, data.frame("CPE"=CPE), nperm=1000)
+plot( index1_tf, type="n" )
+text( index1_tf, labels=rownames(index1_tf) )
+plot( cpe_vf )
 ```
 
 However, as with any multivariate model this model may take a long time (hours-days) to fit.  If this is happening please try one or more ways to simplify the problem:
