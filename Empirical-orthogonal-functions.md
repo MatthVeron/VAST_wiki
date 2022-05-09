@@ -46,6 +46,10 @@ results = plot( fit,
   plot_set=c(3,16),
   category_names = c("pollock", "cod", "arrowtooth", "snow_crab", "yellowfin") )
 
+# Load Cold-pool-extent
+example2 = load_example( data_set="EBS_pollock" )
+CPE = example2$covariate_data[match(fit$year_labels,example2$covariate_data$Year),'AREA_SUM_KM2_LTE2']
+
 # use `ecodist` to display ordination
 index1_tf = results$Factors$Rotated_loadings$EpsilonTime1
 cpe_vf = ecodist::vf(index1_tf, data.frame("CPE"=CPE), nperm=1000)
@@ -55,10 +59,8 @@ plot( cpe_vf )
 
 # Plot against cold-pool extent index
 index1 = results$Factors$Rotated_loadings$EpsilonTime1[,2]
-example2 = load_example( data_set="EBS_pollock" )
-CPE = example2$covariate_data[match(fit$year_labels,example2$covariate_data$Year),'AREA_SUM_KM2_LTE2']
 index1 = sign(cor(index1,CPE)) * index1
-matplot( x=fit$year_labels, y=scale(cbind(index1,CPE,index1_t)),
+matplot( x=fit$year_labels, y=scale(cbind(index1,CPE,index1_tf)),
   type="l", lty="solid", col=c("blue","black","red"), lwd=2 )
 legend( "bottom", ncol=3, fill=c("blue","black","red"), legend=c("factor-2","CPE","vf_index"))
 ```
