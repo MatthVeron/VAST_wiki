@@ -73,7 +73,7 @@ D_gt <- D_gt %>% as.data.frame() %>%
     pivot_longer(-cell, names_to = "Year", values_to='D')
 D <- merge(D_gt, mdl$PlotDF, by.x='cell', by.y='x2i')
 g <- gmap +
-  geom_point(data=D, aes(Lon, Lat, color=log(D), group=NULL),
+  geom_point(data=D, aes(Lon, Lat, color=log(as.vector(D)), group=NULL),
              ## These settings are necessary to avoid
              ## overlplotting which is a problem here. May need
              ## to be tweaked further.
