@@ -46,8 +46,6 @@ fit0 = fit_model( settings = settings0,
   t_i = example$sampling_data[,'Year'],
   b_i = example$sampling_data[,'Catch_KG'],
   a_i = example$sampling_data[,'AreaSwept_km2'],
-  getsd = FALSE,
-  newtonsteps = 0,
   working_dir = run_dir )
 
 ###### Calculate percent-deviance-explained
