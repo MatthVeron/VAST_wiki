@@ -60,9 +60,11 @@ plot( cpe_vf )
 # Plot against cold-pool extent index
 index1 = results$Factors$Rotated_loadings$EpsilonTime1[,2]
 index1 = sign(cor(index1,CPE)) * index1
-matplot( x=fit$year_labels, y=scale(cbind(index1,CPE,index1_tf)),
-  type="l", lty="solid", col=c("blue","black","red"), lwd=2 )
-legend( "bottom", ncol=3, fill=c("blue","black","red"), legend=c("factor-2","CPE","vf_index"))
+png( "EOF_index.png", width=4, height=4, res=200, units="in")
+  matplot( x=fit$year_labels, y=scale(cbind(index1,CPE,index1_tf)),
+    type="l", lty="solid", col=c("blue","black","red"), lwd=2, ylab="Index", xlab="Year" )
+  legend( "bottom", ncol=3, fill=c("blue","black","red"), legend=c("factor-2","CPE","vf_index"))
+dev.off()
 ```
 
 However, as with any multivariate model this model may take a long time (hours-days) to fit.  If this is happening please try one or more ways to simplify the problem:
