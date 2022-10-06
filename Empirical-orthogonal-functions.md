@@ -53,17 +53,19 @@ CPE = example2$covariate_data[match(fit$year_labels,example2$covariate_data$Year
 # use `ecodist` to display ordination
 index1_tf = results$Factors$Rotated_loadings$EpsilonTime1
 cpe_vf = ecodist::vf(index1_tf, data.frame("CPE"=CPE), nperm=1000)
-plot( index1_tf, type="n" )
-text( index1_tf, labels=rownames(index1_tf) )
-plot( cpe_vf )
+png( "year_ordination.png", width=6, height=6, res=200, units="in")
+  plot( index1_tf, type="n" )
+  text( index1_tf, labels=rownames(index1_tf) )
+  plot( cpe_vf )
+dev.off()
 
 # Plot against cold-pool extent index
-index1 = results$Factors$Rotated_loadings$EpsilonTime1[,2]
-index1 = sign(cor(index1,CPE)) * index1
-png( "EOF_index.png", width=4, height=4, res=200, units="in")
-  matplot( x=fit$year_labels, y=scale(cbind(index1,CPE,index1_tf)),
-    type="l", lty="solid", col=c("blue","black","red"), lwd=2, ylab="Index", xlab="Year" )
-  legend( "bottom", ncol=3, fill=c("blue","black","red"), legend=c("factor-2","CPE","vf_index"))
+index2 = results$Factors$Rotated_loadings$EpsilonTime1[,2]
+index2 = sign(cor(index2,CPE)) * index2
+png( "EOF_index.png", width=6, height=6, res=200, units="in")
+  matplot( x=fit$year_labels, y=scale(cbind(CPE,index2)),
+    type="l", lty="solid", col=c("blue","black"), lwd=2, ylab="Index", xlab="Year" )
+  legend( "bottom", ncol=2, fill=c("blue","black"), legend=c("CPE","factor-2"), bty="n")
 dev.off()
 ```
 
