@@ -25,6 +25,7 @@
 * [Modify defaults for advanced users](https://github.com/James-Thorson-NOAA/VAST/wiki/Modifying-parameters-and-data)
 
 **Project structure and utilities:**
+* [Applications](https://github.com/James-Thorson-NOAA/VAST/wiki/Applications)
 * [Development priorities](https://github.com/James-Thorson-NOAA/VAST/wiki/Development-priorities)
 * [Development workflow](https://github.com/James-Thorson-NOAA/VAST/wiki/Development-workflow-for-contributions)
 * [Speed testing](https://github.com/James-Thorson-NOAA/VAST/wiki/Speed-test)
