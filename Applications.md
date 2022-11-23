@@ -44,6 +44,9 @@ I first list instances where VAST (or its precursors) was used and documented as
 37. Pacific cod in Bering Sea, North Pacific FMC, 2021 ([link here](https://apps-afsc.fisheries.noaa.gov/Plan_Team/2021/EBSpcod.pdf), e.g., Fig. 2.4)
 38. Celtic Sea whiting, ICES, 2021 ([link here](https://ices-library.figshare.com/articles/report/Inter-Benchmark_Protocol_on_Celtic_Seas_Whiting_2021_IBPCSWhiting_/18620777), e.g., see Fig. 10)
 39. Celtic Sea gadids, ICES, 2022 ([link here](https://ices-library.figshare.com/articles/report/Working_Group_for_the_Celtic_Seas_Ecoregion/19863796?file=36099053), see e.g. Fig. 8.11)
+40.  Yellowfin sole, North Pacific FMC, 2022 ([link here](https://apps-afsc.fisheries.noaa.gov/Plan_Team/2022/BSAIyfin.pdf), see Fig. 14/16/28)
+41.  Pacific cod, North Pacific FMC, 2022 ([link here](https://apps-afsc.fisheries.noaa.gov/Plan_Team/2022/EBSpcod.pdf), see Fig. 18-22)
+42.  Alaska pollock, North Pacific FMC, 2022 ([link here](https://apps-afsc.fisheries.noaa.gov/Plan_Team/2022/EBSPollock.pdf), see Fig. 14/20)
 
 ### Explored and documented in assessment report
 1. Walleye pollock in Eastern Bering Sea, North Pacific FMC, 2016 ([link here](https://www.afsc.noaa.gov/REFM/Docs/2016/EBSpollock.pdf), see Fig. 1.9)
