@@ -117,6 +117,7 @@ Ocean (ISC). http://isc.fra.go.jp/pdf/PBF/ISC21_PBF_1/ISC_21_PBFWG_1_03_Chang_re
 25. Akia, S., Guery, L., Grande, M., Kaplan, D., Pascual, P., Ramos, M.L., Uranga, J., Abascal, F., Santiago, J., Merino, G., 2022. European purse seiners cpue standardization of eastern atlantic skipjack caught under non-owned dfads using the vast methodology. Collect Vol Sci Pap ICCAT 79, 210–221.
 26. Sawada, K., Gruss, A., Okuda, T., 2022. Update on the VAST (vector autoregressive spatio-temporal) modelling of grenadier relative abundance in Subarea 48.6 (No. WG-FSA-2022/33). CCAMLR.
 27. Grüss, A., Moore, G., Pinkerton, M., Devine, J., 2022. VAST (vector autoregressive spatio-temporal) modelling of macrourid relative abundance in the Ross Sea region to support by-catch management (No. WG-FSA-2022/48). CCAMLR.
+28. Nishijima, S., Kanazawa, K., Ichinokawa, M., Yukami, R., Manabe, A., 2022. Standardizing monthly egg survey data as an abundance index for spawning stock biomass of chub mackerel in the Northwest Pacific (No. NPFC-2022-TWG CMSA06-WP10). North Pacific Fisheries Commission.
 
 ### Journal articles
 Finally, I list instances of peer-reviewed journal articles using `VAST` (or its precursors: `SpatialDeltaGLMM` and `SpatialDFA`)
