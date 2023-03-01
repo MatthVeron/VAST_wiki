@@ -16,19 +16,28 @@ library(VAST)
 example = load_example( data_set="EBS_pollock" )
 
 # Make settings (turning off bias.correct to save time for example)
-settings = make_settings( n_x=100, Region=example$Region, purpose="index",
-  strata.limits=example$strata.limits, bias.correct=FALSE )
+settings = make_settings( n_x=100,
+                          Region=example$Region,
+                          purpose="index",
+                          strata.limits=example$strata.limits,
+                          bias.correct=FALSE )
 
 # Fit the model and a first time and record MLE
-fit = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
-  "Lon_i"=example$sampling_data[,'Lon'], "t_i"=example$sampling_data[,'Year'],
-  "c_i"=rep(0,nrow(example$sampling_data)), "b_i"=example$sampling_data[,'Catch_KG'],
-  "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=example$sampling_data[,'Vessel'] )
+fit = fit_model( "settings"=settings,
+                 "Lat_i"=example$sampling_data[,'Lat'],
+                 "Lon_i"=example$sampling_data[,'Lon'],
+                 "t_i"=example$sampling_data[,'Year'],
+                 "c_i"=rep(0,nrow(example$sampling_data)),
+                 "b_i"=example$sampling_data[,'Catch_KG'],
+                 "a_i"=example$sampling_data[,'AreaSwept_km2'],
+                 "v_i"=example$sampling_data[,'Vessel'] )
 ParHat = fit$ParHat
 
 # Generate partitions in data
 n_fold = 10
-Partition_i = sample( 1:n_fold, size=nrow(example$sampling_data), replace=TRUE )
+Partition_i = sample( 1:n_fold,
+                      size=nrow(example$sampling_data),
+                      replace=TRUE )
 prednll_f = rep(NA, n_fold )
 
 # Loop through partitions, refitting each time with a different PredTF_i
@@ -36,11 +45,17 @@ for( fI in 1:n_fold ){
   PredTF_i = ifelse( Partition_i==fI, TRUE, FALSE )
 
   # Refit, starting at MLE, without calculating standard errors (to save time)
-  fit_new = fit_model( "settings"=settings, "Lat_i"=example$sampling_data[,'Lat'],
-    "Lon_i"=example$sampling_data[,'Lon'], "t_i"=example$sampling_data[,'Year'],
-    "c_i"=rep(0,nrow(example$sampling_data)), "b_i"=example$sampling_data[,'Catch_KG'],
-    "a_i"=example$sampling_data[,'AreaSwept_km2'], "v_i"=example$sampling_data[,'Vessel'],
-    "PredTF_i"=PredTF_i, "Parameters"=ParHat, "getsd"=FALSE )
+  fit_new = fit_model( "settings"=settings,
+                       "Lat_i"=example$sampling_data[,'Lat'],
+                       "Lon_i"=example$sampling_data[,'Lon'],
+                       "t_i"=example$sampling_data[,'Year'],
+                       "c_i"=rep(0,nrow(example$sampling_data)),
+                       "b_i"=example$sampling_data[,'Catch_KG'],
+                       "a_i"=example$sampling_data[,'AreaSwept_km2'],
+                       "v_i"=example$sampling_data[,'Vessel'],
+                       "PredTF_i"=PredTF_i,
+                       "Parameters"=ParHat,
+                       "getsd"=FALSE )
 
   # Save fit to out-of-bag data
   prednll_f[fI] = fit_new$Report$pred_jnll
