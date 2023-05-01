@@ -37,7 +37,6 @@ fit = fit_model( settings=settings,
   b_i=example$sampling_data[,'Catch_KG'],
   a_i=example$sampling_data[,'AreaSwept_km2'],
   newtonsteps=0,
-  getsd=FALSE,
   Use_REML=TRUE )
 
 # Plot results, including spatial term Omega1
