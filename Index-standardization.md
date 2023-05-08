@@ -3,12 +3,6 @@
 I here demonstrate my efforts to develop high-level functions to simplify running `VAST` for several common model purposes.  The default structure shown here is for "index standardization."
 
 ```R
-# Download latest release number; its useful for reproducibility to use a specific release number
-devtools::install_github("James-Thorson-NOAA/VAST")
-
-# Set local working directory (change for your machine)
-setwd( "D:/UW Hideaway (SyncBackFree)/AFSC/2019-03 -- Making helper functions for VAST" )
-
 # Load package
 library(VAST)
 
