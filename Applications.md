@@ -154,7 +154,7 @@ Finally, I list instances of peer-reviewed journal articles using `VAST` (or its
 
 16.	Eisner, L.B., Yasumiishi, E.M., Andrews, A.G., O’Leary, C.A., 2020. Large copepods as leading indicators of walleye pollock recruitment in the southeastern Bering Sea: Sample-Based and spatio-temporal model (VAST) results. Fish. Res. 232, 105720. https://doi.org/10.1016/j.fishres.2020.105720
 
-17.	Elo, M., Kajanus, M.H., Tolvanen, J., Devictor, V., Forsman, J.T., Lehikoinen, A., Mönkkönen, M., Thorson, J.T., Vollstädt, M.G.R., Kivelä, S.M., In press. Do large-scale associations in birds imply biotic interactions or environmental filtering? J. Biogeogr. n/a. https://doi.org/10.1111/jbi.14520
+17.	Elo, M., Kajanus, M.H., Tolvanen, J., Devictor, V., Forsman, J.T., Lehikoinen, A., Mönkkönen, M., Thorson, J.T., Vollstädt, M.G.R., Kivelä, S.M., 2023. Do large-scale associations in birds imply biotic interactions or environmental filtering? J. Biogeogr. 50, 169–182. https://doi.org/10.1111/jbi.14520
 
 18.	Gao, J., Thorson, J.T., Szuwalski, C., Wang, H.-Y., 2020. Historical dynamics of the demersal fish community in the East and South China Seas. Mar. Freshw. Res. https://doi.org/10.1071/MF18472
 
@@ -182,160 +182,171 @@ Finally, I list instances of peer-reviewed journal articles using `VAST` (or its
 
 30.	Grüss, A., Thorson, J.T., 2019. Developing spatio-temporal models using multiple data types for evaluating population trends and habitat usage. ICES J. Mar. Sci. 76, 1748–1761. https://doi.org/10.1093/icesjms/fsz075
 
-31.	Grüss, A., Thorson, J.T., Babcock, E.A., Tarnecki, J.H., In press. Producing distribution maps for informing ecosystem-based fisheries management using a comprehensive survey database and spatio-temporal models. ICES J. Mar. Sci. https://doi.org/10.1093/icesjms/fsx120
+31.	Grüss, A., Thorson, J.T., Anderson, O.F., O’Driscoll, R., Heller-Shipley, M., Goodman, S., n.d. Spatially-varying catchability for integrating research survey data with other data sources: case studies involving observer samples, industry-cooperative surveys, and predators-as-samplers. Can. J. Fish. Aquat. Sci.
 
-32.	Grüss, A., Thorson, J.T., Carroll, G., Ng, E.L., Holsman, K.K., Aydin, K., Kotwicki, S., Morzaria-Luna, H.N., Ainsworth, C.H., Thompson, K.A., 2020c. Spatio-temporal analyses of marine predator diets from data-rich and data-limited systems. Fish Fish. 21, 718–739. https://doi.org/10.1111/faf.12457
+32.	Grüss, A., Thorson, J.T., Babcock, E.A., Tarnecki, J.H., In press. Producing distribution maps for informing ecosystem-based fisheries management using a comprehensive survey database and spatio-temporal models. ICES J. Mar. Sci. https://doi.org/10.1093/icesjms/fsx120
 
-33.	Grüss, A., Thorson, J.T., Sagarese, S.R., Babcock, E.A., Karnauskas, M., Walter, J.F., Drexler, M., 2017. Ontogenetic spatial distributions of red grouper (Epinephelus morio) and gag grouper (Mycteroperca microlepis) in the U.S. Gulf of Mexico. Fish. Res. 193, 129–142. https://doi.org/10.1016/j.fishres.2017.04.006
+33.	Grüss, A., Thorson, J.T., Carroll, G., Ng, E.L., Holsman, K.K., Aydin, K., Kotwicki, S., Morzaria-Luna, H.N., Ainsworth, C.H., Thompson, K.A., 2020c. Spatio-temporal analyses of marine predator diets from data-rich and data-limited systems. Fish Fish. 21, 718–739. https://doi.org/10.1111/faf.12457
 
-34.	Grüss, A., Thorson, J.T., Stawitz, C.C., Reum, J.C.P., Rohan, S.K., Barnes, C.L., 2021. Synthesis of interannual variability in spatial demographic processes supports the strong influence of cold-pool extent on eastern Bering Sea walleye pollock (Gadus chalcogrammus). Prog. Oceanogr. 194, 102569. https://doi.org/10.1016/j.pocean.2021.102569
+34.	Grüss, A., Thorson, J.T., Sagarese, S.R., Babcock, E.A., Karnauskas, M., Walter, J.F., Drexler, M., 2017. Ontogenetic spatial distributions of red grouper (Epinephelus morio) and gag grouper (Mycteroperca microlepis) in the U.S. Gulf of Mexico. Fish. Res. 193, 129–142. https://doi.org/10.1016/j.fishres.2017.04.006
 
-35.	Grüss, A., Walter, J.F., Babcock, E.A., Forrestal, F.C., Thorson, J.T., Lauretta, M.V., Schirripa, M.J., 2019c. Evaluation of the impacts of different treatments of spatio-temporal variation in catch-per-unit-effort standardization models. Fish. Res. 213, 75–93. https://doi.org/10.1016/j.fishres.2019.01.008
+35.	Grüss, A., Thorson, J.T., Stawitz, C.C., Reum, J.C.P., Rohan, S.K., Barnes, C.L., 2021. Synthesis of interannual variability in spatial demographic processes supports the strong influence of cold-pool extent on eastern Bering Sea walleye pollock (Gadus chalcogrammus). Prog. Oceanogr. 194, 102569. https://doi.org/10.1016/j.pocean.2021.102569
 
-36.	Guan, L., Chen, Y., Staples, K.W., Cao, J., Li, B., 2017. The influence of complex structure on the spatial dynamics of Atlantic cod (Gadus morhua) in the Gulf of Maine. ICES J. Mar. Sci. 74, 2379–2388. https://doi.org/10.1093/icesjms/fsx064
+36.	Grüss, A., Walter, J.F., Babcock, E.A., Forrestal, F.C., Thorson, J.T., Lauretta, M.V., Schirripa, M.J., 2019c. Evaluation of the impacts of different treatments of spatio-temporal variation in catch-per-unit-effort standardization models. Fish. Res. 213, 75–93. https://doi.org/10.1016/j.fishres.2019.01.008
 
-37.	Guan, L., Jin, X., Wu, Q., Shan, X., 2019. Statistical modelling for exploring diel vertical movements and spatial correlations of marine fish species: a supplementary tool to assess species interactions. ICES J. Mar. Sci. 76, 1776–1783. https://doi.org/10.1093/icesjms/fsz033
+37.	Guan, L., Chen, Y., Staples, K.W., Cao, J., Li, B., 2017. The influence of complex structure on the spatial dynamics of Atlantic cod (Gadus morhua) in the Gulf of Maine. ICES J. Mar. Sci. 74, 2379–2388. https://doi.org/10.1093/icesjms/fsx064
 
-38.	Guan, L., Shan, X., Jin, X., Gorfine, H., Yang, T., Li, Z., 2020. Evaluating spatio-temporal dynamics of multiple fisheries-targeted populations simultaneously: A case study of the Bohai Sea ecosystem in China. Ecol. Model. 422, 108987. https://doi.org/10.1016/j.ecolmodel.2020.108987
+38.	Guan, L., Jin, X., Wu, Q., Shan, X., 2019. Statistical modelling for exploring diel vertical movements and spatial correlations of marine fish species: a supplementary tool to assess species interactions. ICES J. Mar. Sci. 76, 1776–1783. https://doi.org/10.1093/icesjms/fsz033
 
-39.	Han, Q., Grüss, A., Shan, X., Jin, X., Thorson, J.T., 2021. Understanding patterns of distribution shifts and range expansion/contraction for small yellow croaker (Larimichthys polyactis) in the Yellow Sea. Fish. Oceanogr. 30, 69–84. https://doi.org/10.1111/fog.12503
+39.	Guan, L., Shan, X., Jin, X., Gorfine, H., Yang, T., Li, Z., 2020. Evaluating spatio-temporal dynamics of multiple fisheries-targeted populations simultaneously: A case study of the Bohai Sea ecosystem in China. Ecol. Model. 422, 108987. https://doi.org/10.1016/j.ecolmodel.2020.108987
 
-40.	Han, Q., Shan, X., Jin, X., Gorfine, H., 2023a. Contrasting stock status trends obtained from survey and fishery CPUE, taking Larimichthys polyactis in Yellow Sea Large Marine Ecosystem as an example. Ecol. Indic. 147, 110032. https://doi.org/10.1016/j.ecolind.2023.110032
+40.	Han, Q., Grüss, A., Shan, X., Jin, X., Thorson, J.T., 2021. Understanding patterns of distribution shifts and range expansion/contraction for small yellow croaker (Larimichthys polyactis) in the Yellow Sea. Fish. Oceanogr. 30, 69–84. https://doi.org/10.1111/fog.12503
 
-41.	Han, Q., Shan, X., Jin, X., Gorfine, H., 2023b. Overcoming gaps in a seasonal time series of Japanese anchovy abundance to analyse interannual trends. Ecol. Indic. 149, 110189. https://doi.org/10.1016/j.ecolind.2023.110189
+41.	Han, Q., Shan, X., Jin, X., Gorfine, H., 2023a. Contrasting stock status trends obtained from survey and fishery CPUE, taking Larimichthys polyactis in Yellow Sea Large Marine Ecosystem as an example. Ecol. Indic. 147, 110032. https://doi.org/10.1016/j.ecolind.2023.110032
 
-42.	Han, Q., Shan, X., Jin, X., Gorfine, H., Chen, Y., Su, C., 2022. Changes in distribution patterns for Larimichthys polyactis in response to multiple pressures in the Bohai Sea over the past four decades. Front. Mar. Sci.
+42.	Han, Q., Shan, X., Jin, X., Gorfine, H., 2023b. Overcoming gaps in a seasonal time series of Japanese anchovy abundance to analyse interannual trends. Ecol. Indic. 149, 110189. https://doi.org/10.1016/j.ecolind.2023.110189
 
-43.	Hansell, A.C., Becker, S.L., Cadrin, S.X., Lauretta, M., Walter III, J.F., Kerr, L.A., 2022. Spatio-temporal dynamics of bluefin tuna (Thunnus thynnus) in US waters of the northwest Atlantic. Fish. Res. 255, 106460. https://doi.org/10.1016/j.fishres.2022.106460
+43.	Han, Q., Shan, X., Jin, X., Gorfine, H., Chen, Y., Su, C., 2022. Changes in distribution patterns for Larimichthys polyactis in response to multiple pressures in the Bohai Sea over the past four decades. Front. Mar. Sci.
 
-44.	Hodgdon, C.T., Tanaka, K.R., Runnebaum, J., Cao, J., Chen, Y., 2020. A framework to incorporate environmental effects into stock assessments informed by fishery-independent surveys: a case study with American lobster (Homarus americanus). Can. J. Fish. Aquat. Sci. 77, 1700–1710. https://doi.org/10.1139/cjfas-2020-0076
+44.	Hansell, A.C., Becker, S.L., Cadrin, S.X., Lauretta, M., Walter III, J.F., Kerr, L.A., 2022. Spatio-temporal dynamics of bluefin tuna (Thunnus thynnus) in US waters of the northwest Atlantic. Fish. Res. 255, 106460. https://doi.org/10.1016/j.fishres.2022.106460
 
-45.	Hovel, R.A., Thorson, J.T., Carter, J.L., Quinn, T.P., 2017. Within-lake habitat heterogeneity mediates community response to warming trends. Ecology 98, 2333–2342. https://doi.org/10.1002/ecy.1944
+45.	Hodgdon, C.T., Tanaka, K.R., Runnebaum, J., Cao, J., Chen, Y., 2020. A framework to incorporate environmental effects into stock assessments informed by fishery-independent surveys: a case study with American lobster (Homarus americanus). Can. J. Fish. Aquat. Sci. 77, 1700–1710. https://doi.org/10.1139/cjfas-2020-0076
 
-46.	Hsu, J., Chang, Y.-J., Ducharme-Barth, N.D., 2022. Evaluation of the influence of spatial treatments on catch-per-unit-effort standardization: A fishery application and simulation study of Pacific saury in the Northwestern Pacific Ocean. Fish. Res. 255, 106440.
+46.	Hovel, R.A., Thorson, J.T., Carter, J.L., Quinn, T.P., 2017. Within-lake habitat heterogeneity mediates community response to warming trends. Ecology 98, 2333–2342. https://doi.org/10.1002/ecy.1944
 
-47.	Hsu, J., Chang, Y.-J., Kitakado, T., Kai, M., Li, B., Hashimoto, M., Hsieh, C., Kulik, V., Park, K.J., 2021. Evaluating the spatiotemporal dynamics of Pacific saury in the Northwestern Pacific Ocean by using a geostatistical modelling approach. Fish. Res. 235, 105821. https://doi.org/10.1016/j.fishres.2020.105821
+47.	Hsu, J., Chang, Y.-J., Ducharme-Barth, N.D., 2022. Evaluation of the influence of spatial treatments on catch-per-unit-effort standardization: A fishery application and simulation study of Pacific saury in the Northwestern Pacific Ocean. Fish. Res. 255, 106440.
 
-48.	Indivero, J., Essington, T.E., Ianelli, J.N., Thorson, J.T., 2023. Incorporating distribution shifts and spatio-temporal variation when estimating weight-at-age for stock assessments: a case study involving the Bering Sea pollock (Gadus chalcogrammus). ICES J. Mar. Sci. fsac236. https://doi.org/10.1093/icesjms/fsac236
+48.	Hsu, J., Chang, Y.-J., Kitakado, T., Kai, M., Li, B., Hashimoto, M., Hsieh, C., Kulik, V., Park, K.J., 2021. Evaluating the spatiotemporal dynamics of Pacific saury in the Northwestern Pacific Ocean by using a geostatistical modelling approach. Fish. Res. 235, 105821. https://doi.org/10.1016/j.fishres.2020.105821
 
-49.	Johnson, K.F., Thorson, J.T., Punt, A.E., 2019. Investigating the value of including depth during spatiotemporal index standardization. Fish. Res. 216, 126–137. https://doi.org/10.1016/j.fishres.2019.04.004
+49.	Indivero, J., Essington, T.E., Ianelli, J.N., Thorson, J.T., 2023. Incorporating distribution shifts and spatio-temporal variation when estimating weight-at-age for stock assessments: a case study involving the Bering Sea pollock (Gadus chalcogrammus). ICES J. Mar. Sci. fsac236. https://doi.org/10.1093/icesjms/fsac236
 
-50.	Kai, M., 2019. Spatio-temporal changes in catch rates of pelagic sharks caught by Japanese research and training vessels in the western and central North Pacific. Fish. Res. 216, 177–195. https://doi.org/10.1016/j.fishres.2019.02.015
+50.	Johnson, K.F., Thorson, J.T., Punt, A.E., 2019. Investigating the value of including depth during spatiotemporal index standardization. Fish. Res. 216, 126–137. https://doi.org/10.1016/j.fishres.2019.04.004
 
-51.	Kajanus, M.H., Forsman, J.T., Vollstädt, M.G.R., Devictor, V., Elo, M., Lehikoinen, A., Mönkkönen, M., Thorson, J.T., Kivelä, S.M., 2022. Titmice are a better indicator of bird density in Northern European than in Western European forests. Ecol. Evol. 12, e8479. https://doi.org/10.1002/ece3.8479
+51.	Kai, M., 2019. Spatio-temporal changes in catch rates of pelagic sharks caught by Japanese research and training vessels in the western and central North Pacific. Fish. Res. 216, 177–195. https://doi.org/10.1016/j.fishres.2019.02.015
 
-52.	Kakehi, S., Hashimoto, M., Naya, M., Ito, S., Miyamoto, H., Suyama, S., 2022. Reduced body weight of Pacific saury (Cololabis saira) causes delayed initiation of spawning migration. Fish. Oceanogr. 31, 319–332. https://doi.org/10.1111/fog.12579
+52.	Kajanus, M.H., Forsman, J.T., Vollstädt, M.G.R., Devictor, V., Elo, M., Lehikoinen, A., Mönkkönen, M., Thorson, J.T., Kivelä, S.M., 2022. Titmice are a better indicator of bird density in Northern European than in Western European forests. Ecol. Evol. 12, e8479. https://doi.org/10.1002/ece3.8479
 
-53.	Kanamori, Y., Nishijima, S., Okamura, H., Yukami, R., Watai, M., Takasuka, A., 2021. Spatio-temporal model reduces species misidentification bias of spawning eggs in stock assessment of spotted mackerel in the western North Pacific. Fish. Res. 236, 105825. https://doi.org/10.1016/j.fishres.2020.105825
+53.	Kakehi, S., Hashimoto, M., Naya, M., Ito, S., Miyamoto, H., Suyama, S., 2022. Reduced body weight of Pacific saury (Cololabis saira) causes delayed initiation of spawning migration. Fish. Oceanogr. 31, 319–332. https://doi.org/10.1111/fog.12579
 
-54.	Kanamori, Y., Takasuka, A., Nishijima, S., Okamura, H., 2019. Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. Mar. Ecol. Prog. Ser. 624, 155–166. https://doi.org/10.3354/meps13037
+54.	Kanamori, Y., Nishijima, S., Okamura, H., Yukami, R., Watai, M., Takasuka, A., 2021. Spatio-temporal model reduces species misidentification bias of spawning eggs in stock assessment of spotted mackerel in the western North Pacific. Fish. Res. 236, 105825. https://doi.org/10.1016/j.fishres.2020.105825
 
-55.	Kawauchi, Y., Yagi, Y., Yano, T., Fujiwara, K., 2023. Multi-decadal distribution changes of commercially important demersal species in the central-western Sea of Japan based on a multi-species spatiotemporal model. Reg. Stud. Mar. Sci. 61, 102899. https://doi.org/10.1016/j.rsma.2023.102899
+55.	Kanamori, Y., Takasuka, A., Nishijima, S., Okamura, H., 2019. Climate change shifts the spawning ground northward and extends the spawning period of chub mackerel in the western North Pacific. Mar. Ecol. Prog. Ser. 624, 155–166. https://doi.org/10.3354/meps13037
 
-56.	Lowman, B.A., Jones, A.W., Pessutti, J.P., Mercer, A.M., Manderson, J.P., Galuardi, B., 2021. Northern Shortfin Squid (Illex illecebrosus) Fishery Footprint on the Northeast US Continental Shelf. Front. Mar. Sci. 8. https://doi.org/10.3389/fmars.2021.631657
+56.	Kawauchi, Y., Yagi, Y., Yano, T., Fujiwara, K., 2023. Multi-decadal distribution changes of commercially important demersal species in the central-western Sea of Japan based on a multi-species spatiotemporal model. Reg. Stud. Mar. Sci. 61, 102899. https://doi.org/10.1016/j.rsma.2023.102899
 
-57.	Marshall, K.N., Duffy-Anderson, J.T., Ward, E.J., Anderson, S.C., Hunsicker, M.E., Williams, B.C., 2019. Long-term trends in ichthyoplankton assemblage structure, biodiversity, and synchrony in the Gulf of Alaska and their relationships to climate. Prog. Oceanogr. 170, 134–145. https://doi.org/10.1016/j.pocean.2018.11.002
+57.	Lowman, B.A., Jones, A.W., Pessutti, J.P., Mercer, A.M., Manderson, J.P., Galuardi, B., 2021. Northern Shortfin Squid (Illex illecebrosus) Fishery Footprint on the Northeast US Continental Shelf. Front. Mar. Sci. 8. https://doi.org/10.3389/fmars.2021.631657
 
-58.	Maureaud, A.A., Frelat, R., Pécuchet, L., Shackell, N., Mérigot, B., Pinsky, M.L., Amador, K., Anderson, S.C., Arkhipkin, A., Auber, A., Barri, I., Bell, R.J., Belmaker, J., Beukhof, E., Camara, M.L., Guevara‐Carrasco, R., Choi, J., Christensen, H.T., Conner, J., Cubillos, L.A., Diadhiou, H.D., Edelist, D., Emblemsvåg, M., Ernst, B., Fairweather, T.P., Fock, H.O., Friedland, K.D., Garcia, C.B., Gascuel, D., Gislason, H., Goren, M., Guitton, J., Jouffre, D., Hattab, T., Hidalgo, M., Kathena, J.N., Knuckey, I., Kidé, S.O., Koen‐Alonso, M., Koopman, M., Kulik, V., León, J.P., Levitt‐Barmats, Y., Lindegren, M., Llope, M., Massiot‐Granier, F., Masski, H., McLean, M., Meissa, B., Mérillet, L., Mihneva, V., Nunoo, F.K.E., O’Driscoll, R., O’Leary, C.A., Petrova, E., Ramos, J.E., Refes, W., Román‐Marcote, E., Siegstad, H., Sobrino, I., Sólmundsson, J., Sonin, O., Spies, I., Steingrund, P., Stephenson, F., Stern, N., Tserkova, F., Tserpes, G., Tzanatos, E., Rijn, I. van, Zwieten, P.A.M. van, Vasilakopoulos, P., Yepsen, D.V., Ziegler, P., Thorson, J.T., 2021. Are we ready to track climate-driven shifts in marine species across international boundaries? - A global survey of scientific bottom trawl data. Glob. Change Biol. 27, 220–236. https://doi.org/10.1111/gcb.15404
+58.	Marshall, K.N., Duffy-Anderson, J.T., Ward, E.J., Anderson, S.C., Hunsicker, M.E., Williams, B.C., 2019. Long-term trends in ichthyoplankton assemblage structure, biodiversity, and synchrony in the Gulf of Alaska and their relationships to climate. Prog. Oceanogr. 170, 134–145. https://doi.org/10.1016/j.pocean.2018.11.002
 
-59.	Mazur, M.D., Tanaka, K.R., Shank, B., Chang, J.-H., Hodgdon, C.T., Reardon, K.M., Friedland, K.D., Chen, Y., 2022. Incorporating spatial heterogeneity and environmental impacts into stock-recruitment relationships for Gulf of Maine lobster. ICES J. Mar. Sci. fsab266. https://doi.org/10.1093/icesjms/fsab266
+59.	Maureaud, A.A., Frelat, R., Pécuchet, L., Shackell, N., Mérigot, B., Pinsky, M.L., Amador, K., Anderson, S.C., Arkhipkin, A., Auber, A., Barri, I., Bell, R.J., Belmaker, J., Beukhof, E., Camara, M.L., Guevara‐Carrasco, R., Choi, J., Christensen, H.T., Conner, J., Cubillos, L.A., Diadhiou, H.D., Edelist, D., Emblemsvåg, M., Ernst, B., Fairweather, T.P., Fock, H.O., Friedland, K.D., Garcia, C.B., Gascuel, D., Gislason, H., Goren, M., Guitton, J., Jouffre, D., Hattab, T., Hidalgo, M., Kathena, J.N., Knuckey, I., Kidé, S.O., Koen‐Alonso, M., Koopman, M., Kulik, V., León, J.P., Levitt‐Barmats, Y., Lindegren, M., Llope, M., Massiot‐Granier, F., Masski, H., McLean, M., Meissa, B., Mérillet, L., Mihneva, V., Nunoo, F.K.E., O’Driscoll, R., O’Leary, C.A., Petrova, E., Ramos, J.E., Refes, W., Román‐Marcote, E., Siegstad, H., Sobrino, I., Sólmundsson, J., Sonin, O., Spies, I., Steingrund, P., Stephenson, F., Stern, N., Tserkova, F., Tserpes, G., Tzanatos, E., Rijn, I. van, Zwieten, P.A.M. van, Vasilakopoulos, P., Yepsen, D.V., Ziegler, P., Thorson, J.T., 2021. Are we ready to track climate-driven shifts in marine species across international boundaries? - A global survey of scientific bottom trawl data. Glob. Change Biol. 27, 220–236. https://doi.org/10.1111/gcb.15404
 
-60.	McClatchie, S., Gao, J., Drenkard, E.J., Thompson, A.R., Watson, W., Ciannelli, L., Bograd, S.J., Thorson, J.T., 2018. Interannual and Secular Variability of Larvae of Mesopelagic and Forage Fishes in the Southern California Current System. J. Geophys. Res. Oceans 123, 6277–6295. https://doi.org/10.1029/2018JC014011
+60.	Mazur, M.D., Tanaka, K.R., Shank, B., Chang, J.-H., Hodgdon, C.T., Reardon, K.M., Friedland, K.D., Chen, Y., 2022. Incorporating spatial heterogeneity and environmental impacts into stock-recruitment relationships for Gulf of Maine lobster. ICES J. Mar. Sci. fsab266. https://doi.org/10.1093/icesjms/fsab266
 
-61.	McGowan, D., Horne, J., Rogers, L., 2019. Effects of temperature on the distribution and density of capelin in the Gulf of Alaska. Mar. Ecol. Prog. Ser. https://doi.org/10.3354/meps12966
+61.	McClatchie, S., Gao, J., Drenkard, E.J., Thompson, A.R., Watson, W., Ciannelli, L., Bograd, S.J., Thorson, J.T., 2018. Interannual and Secular Variability of Larvae of Mesopelagic and Forage Fishes in the Southern California Current System. J. Geophys. Res. Oceans 123, 6277–6295. https://doi.org/10.1029/2018JC014011
 
-62.	McGowan, D.W., Horne, J.K., Thorson, J.T., Zimmermann, M., 2019. Influence of environmental factors on capelin distributions in the Gulf of Alaska. Deep Sea Res. Part II Top. Stud. Oceanogr., Understanding Ecosystem Processes in the Gulf of Alaska: Volume 2 165, 238–254. https://doi.org/10.1016/j.dsr2.2017.11.018
+62.	McGowan, D., Horne, J., Rogers, L., 2019. Effects of temperature on the distribution and density of capelin in the Gulf of Alaska. Mar. Ecol. Prog. Ser. https://doi.org/10.3354/meps12966
 
-63.	Minte-Vera, C.V., Maunder, M.N., Aires-da-Silva, A.M., 2021. Auxiliary diagnostic analyses used to detect model misspecification and highlight potential solutions in stock assessments: application to yellowfin tuna in the eastern Pacific Ocean. ICES J. Mar. Sci. 78, 3521–3537. https://doi.org/10.1093/icesjms/fsab213
+63.	McGowan, D.W., Horne, J.K., Thorson, J.T., Zimmermann, M., 2019. Influence of environmental factors on capelin distributions in the Gulf of Alaska. Deep Sea Res. Part II Top. Stud. Oceanogr., Understanding Ecosystem Processes in the Gulf of Alaska: Volume 2 165, 238–254. https://doi.org/10.1016/j.dsr2.2017.11.018
 
-64.	Monnahan, C.C., Thorson, J.T., Kotwicki, S., Lauffenburger, N., Ianelli, J.N., Punt, A.E., 2021. Incorporating vertical distribution in index standardization accounts for spatiotemporal availability to acoustic and bottom trawl gear for semi-pelagic species. ICES J. Mar. Sci. https://doi.org/10.1093/icesjms/fsab085
+64.	Minte-Vera, C.V., Maunder, M.N., Aires-da-Silva, A.M., 2021. Auxiliary diagnostic analyses used to detect model misspecification and highlight potential solutions in stock assessments: application to yellowfin tuna in the eastern Pacific Ocean. ICES J. Mar. Sci. 78, 3521–3537. https://doi.org/10.1093/icesjms/fsab213
 
-65.	Mormede, S., Parker, S.J., Pinkerton, M.H., 2020. Comparing spatial distribution modelling of fisheries data with single-area or spatially-explicit integrated population models, a case study of toothfish in the Ross Sea region. Fish. Res. 221, 105381. https://doi.org/10.1016/j.fishres.2019.105381
+65.	Monnahan, C.C., Thorson, J.T., Kotwicki, S., Lauffenburger, N., Ianelli, J.N., Punt, A.E., 2021. Incorporating vertical distribution in index standardization accounts for spatiotemporal availability to acoustic and bottom trawl gear for semi-pelagic species. ICES J. Mar. Sci. https://doi.org/10.1093/icesjms/fsab085
 
-66.	Ng, E.L., Deroba, J.J., Essington, T.E., Grüss, A., Smith, B.E., Thorson, J.T., 2021. Predator stomach contents can provide accurate indices of prey biomass. ICES J. Mar. Sci. https://doi.org/10.1093/icesjms/fsab026
+66.	Mormede, S., Parker, S.J., Pinkerton, M.H., 2020. Comparing spatial distribution modelling of fisheries data with single-area or spatially-explicit integrated population models, a case study of toothfish in the Ross Sea region. Fish. Res. 221, 105381. https://doi.org/10.1016/j.fishres.2019.105381
 
-67.	O’Leary, C.A., DeFilippo, L.B., Thorson, J.T., Kotwicki, S., Hoff, G.R., Kulik, V.V., Ianelli, J.N., Punt, A.E., 2022. Understanding transboundary stocks’ availability by combining multiple fisheries-independent surveys and oceanographic conditions in spatiotemporal models. ICES J. Mar. Sci. 79, 1063–1074. https://doi.org/10.1093/icesjms/fsac046
+67.	Ng, E.L., Deroba, J.J., Essington, T.E., Grüss, A., Smith, B.E., Thorson, J.T., 2021. Predator stomach contents can provide accurate indices of prey biomass. ICES J. Mar. Sci. https://doi.org/10.1093/icesjms/fsab026
 
-68.	O’Leary, C.A., Thorson, J.T., Ianelli, J.N., Kotwicki, S., 2020. Adapting to climate-driven distribution shifts using model-based indices and age composition from multiple surveys in the walleye pollock (Gadus chalcogrammus) stock assessment. Fish. Oceanogr. 29, 541–557. https://doi.org/10.1111/fog.12494
+68.	O’Leary, C.A., DeFilippo, L.B., Thorson, J.T., Kotwicki, S., Hoff, G.R., Kulik, V.V., Ianelli, J.N., Punt, A.E., 2022. Understanding transboundary stocks’ availability by combining multiple fisheries-independent surveys and oceanographic conditions in spatiotemporal models. ICES J. Mar. Sci. 79, 1063–1074. https://doi.org/10.1093/icesjms/fsac046
 
-69.	Olmos, M., Ianelli, J., Ciannelli, L., Spies, I., McGilliard, C., Thorson, J.T., In press. Estimating climate-driven phenology shifts and survey availability using fishery-dependent data. Prog. Oceanogr.
+69.	O’Leary, C.A., Thorson, J.T., Ianelli, J.N., Kotwicki, S., 2020. Adapting to climate-driven distribution shifts using model-based indices and age composition from multiple surveys in the walleye pollock (Gadus chalcogrammus) stock assessment. Fish. Oceanogr. 29, 541–557. https://doi.org/10.1111/fog.12494
 
-70.	Omori, K.L., Thorson, J.T., 2022. Identifying species complexes based on spatial and temporal clustering from joint dynamic species distribution models. ICES J. Mar. Sci. fsac015. https://doi.org/10.1093/icesjms/fsac015
+70.	Olmos, M., Ianelli, J., Ciannelli, L., Spies, I., McGilliard, C.R., Thorson, J.T., 2023. Estimating climate-driven phenology shifts and survey availability using fishery-dependent data. Prog. Oceanogr. 215, 103035. https://doi.org/10.1016/j.pocean.2023.103035
 
-71.	Oyafuso, Z.S., Barnett, L.A.K., Kotwicki, S., 2021. Incorporating spatiotemporal variability in multispecies survey design optimization addresses trade-offs in uncertainty. ICES J. Mar. Sci. 78, 1288–1300. https://doi.org/10.1093/icesjms/fsab038
+71.	Omori, K.L., Thorson, J.T., 2022. Identifying species complexes based on spatial and temporal clustering from joint dynamic species distribution models. ICES J. Mar. Sci. fsac015. https://doi.org/10.1093/icesjms/fsac015
 
-72.	Perretti, C.T., Thorson, J.T., 2019. Spatio-temporal dynamics of summer flounder (Paralichthys dentatus) on the Northeast US shelf. Fish. Res. 215, 62–68. https://doi.org/10.1016/j.fishres.2019.03.006
+72.	Oyafuso, Z.S., Barnett, L.A.K., Kotwicki, S., 2021. Incorporating spatiotemporal variability in multispecies survey design optimization addresses trade-offs in uncertainty. ICES J. Mar. Sci. 78, 1288–1300. https://doi.org/10.1093/icesjms/fsab038
 
-73.	Robertson, M.D., Gao, J., Regular, P.M., Morgan, M.J., Zhang, F., 2021. Lagged recovery of fish spatial distributions following a cold-water perturbation. Sci. Rep. 11, 9513. https://doi.org/10.1038/s41598-021-89066-x
+73.	Oyafuso, Z.S., Barnett, L.A.K., Siple, M.C., Cooper, D.W., Kotwicki, S., 2023. Evaluating potential changes to the US Chukchi Sea bottom trawl survey design via simulation testing. Front. Mar. Sci. https://doi.org/10.3389/fmars.2023.1214526
 
-74.	Runnebaum, J., Guan, L., Cao, J., O’Brien, L., Chen, Y., 2017. Habitat suitability modeling based on a spatiotemporal model: an example for cusk in the Gulf of Maine. Can. J. Fish. Aquat. Sci. 75, 1784–1797. https://doi.org/10.1139/cjfas-2017-0316
+74.	Perretti, C.T., Thorson, J.T., 2019. Spatio-temporal dynamics of summer flounder (Paralichthys dentatus) on the Northeast US shelf. Fish. Res. 215, 62–68. https://doi.org/10.1016/j.fishres.2019.03.006
 
-75.	Runnebaum, J., Tanaka, K.R., Guan, L., Cao, J., OBrien, L., Chen, Y., 2020. Predicting bycatch hotspots based on suitable habitat derived from fishery-independent data. Mar. Ecol. Prog. Ser. 641, 159–175. https://doi.org/10.3354/meps13302
+75.	Robertson, M.D., Gao, J., Regular, P.M., Morgan, M.J., Zhang, F., 2021. Lagged recovery of fish spatial distributions following a cold-water perturbation. Sci. Rep. 11, 9513. https://doi.org/10.1038/s41598-021-89066-x
 
-76.	Satoh, K., Xu, H., Minte-Vera, C.V., Maunder, M.N., Kitakado, T., 2021. Size-specific spatiotemporal dynamics of bigeye tuna (Thunnus obesus) caught by the longline fishery in the eastern Paciﬁc Ocean. Fish. Res. 243, 106065. https://doi.org/10.1016/j.fishres.2021.106065
+76.	Runnebaum, J., Guan, L., Cao, J., O’Brien, L., Chen, Y., 2017. Habitat suitability modeling based on a spatiotemporal model: an example for cusk in the Gulf of Maine. Can. J. Fish. Aquat. Sci. 75, 1784–1797. https://doi.org/10.1139/cjfas-2017-0316
 
-77.	Sculley, M.L., Brodziak, J., 2020. Quantifying the distribution of swordfish (Xiphias gladius) density in the Hawaii-based longline fishery. Fish. Res. 230, 105638. https://doi.org/10.1016/j.fishres.2020.105638
+77.	Runnebaum, J., Tanaka, K.R., Guan, L., Cao, J., OBrien, L., Chen, Y., 2020. Predicting bycatch hotspots based on suitable habitat derived from fishery-independent data. Mar. Ecol. Prog. Ser. 641, 159–175. https://doi.org/10.3354/meps13302
 
-78.	Selden, R.L., Thorson, J.T., Samhouri, J.F., Bograd, S.J., Brodie, S., Carroll, G., Haltuch, M.A., Hazen, E.L., Holsman, K.K., Pinsky, M.L., Tolimieri, N., Willis-Norton, E., 2020. Coupled changes in biomass and distribution drive trends in availability of fish stocks to US West Coast ports. ICES J. Mar. Sci. 77, 188–199. https://doi.org/10.1093/icesjms/fsz211
+78.	Satoh, K., Xu, H., Minte-Vera, C.V., Maunder, M.N., Kitakado, T., 2021. Size-specific spatiotemporal dynamics of bigeye tuna (Thunnus obesus) caught by the longline fishery in the eastern Paciﬁc Ocean. Fish. Res. 243, 106065. https://doi.org/10.1016/j.fishres.2021.106065
 
-79.	Smart, T.I., Bubley, W.J., Glasgow, D.M., Reichert, M.J.M., 2020. Spatial Distribution Changes and Habitat Use in Red Porgy in Waters off the Southeast U.S. Atlantic Coast. Mar. Coast. Fish. 12, 381–394. https://doi.org/10.1002/mcf2.10135
+79.	Sculley, M.L., Brodziak, J., 2020. Quantifying the distribution of swordfish (Xiphias gladius) density in the Hawaii-based longline fishery. Fish. Res. 230, 105638. https://doi.org/10.1016/j.fishres.2020.105638
 
-80.	Stevenson, D.E., Kotwicki, S., Thorson, J.T., Correa, G.M., Buckley, T., 2022. The influence of age and cohort on the distribution of walleye pollock (Gadus chalcogrammus) in the eastern Bering Sea. Can. J. Fish. Aquat. Sci. 79, 1934–1949. https://doi.org/10.1139/cjfas-2021-0300
+80.	Selden, R.L., Thorson, J.T., Samhouri, J.F., Bograd, S.J., Brodie, S., Carroll, G., Haltuch, M.A., Hazen, E.L., Holsman, K.K., Pinsky, M.L., Tolimieri, N., Willis-Norton, E., 2020. Coupled changes in biomass and distribution drive trends in availability of fish stocks to US West Coast ports. ICES J. Mar. Sci. 77, 188–199. https://doi.org/10.1093/icesjms/fsz211
 
-81.	Thorson, J.T., 2022. Development and simulation testing for a new approach to density dependence in species distribution models. ICES J. Mar. Sci. 79, 117–128. https://doi.org/10.1093/icesjms/fsab247
+81.	Smart, T.I., Bubley, W.J., Glasgow, D.M., Reichert, M.J.M., 2020. Spatial Distribution Changes and Habitat Use in Red Porgy in Waters off the Southeast U.S. Atlantic Coast. Mar. Coast. Fish. 12, 381–394. https://doi.org/10.1002/mcf2.10135
 
-82.	Thorson, J.T., 2019a. Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish. Res. 210, 143–161. https://doi.org/10.1016/j.fishres.2018.10.013
+82.	Stevenson, D.E., Kotwicki, S., Thorson, J.T., Correa, G.M., Buckley, T., 2022. The influence of age and cohort on the distribution of walleye pollock (Gadus chalcogrammus) in the eastern Bering Sea. Can. J. Fish. Aquat. Sci. 79, 1934–1949. https://doi.org/10.1139/cjfas-2021-0300
 
-83.	Thorson, J.T., 2019b. Measuring the impact of oceanographic indices on species distribution shifts: The spatially varying effect of cold-pool extent in the eastern Bering Sea. Limnol. Oceanogr. 64, 2632–2645. https://doi.org/10.1002/lno.11238
+83.	Thorson, J.T., 2022. Development and simulation testing for a new approach to density dependence in species distribution models. ICES J. Mar. Sci. 79, 117–128. https://doi.org/10.1093/icesjms/fsab247
 
-84.	Thorson, J.T., 2018. Three problems with the conventional delta-model for biomass sampling data, and a computationally efficient alternative. Can. J. Fish. Aquat. Sci. 75, 1369–1382. https://doi.org/10.1139/cjfas-2017-0266
+84.	Thorson, J.T., 2019a. Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments. Fish. Res. 210, 143–161. https://doi.org/10.1016/j.fishres.2018.10.013
 
-85.	Thorson, J.T., 2015. Spatio-temporal variation in fish condition is not consistently explained by density, temperature, or season for California Current groundfishes. Mar. Ecol. Prog. Ser. 526, 101–112. https://doi.org/10.3354/meps11204
+85.	Thorson, J.T., 2019b. Measuring the impact of oceanographic indices on species distribution shifts: The spatially varying effect of cold-pool extent in the eastern Bering Sea. Limnol. Oceanogr. 64, 2632–2645. https://doi.org/10.1002/lno.11238
 
-86.	Thorson, James T, Adams, C.F., Brooks, E.N., Eisner, L.B., Kimmel, D.G., Legault, C.M., Rogers, L.A., Yasumiishi, E.M., 2020. Seasonal and interannual variation in spatio-temporal models for index standardization and phenology studies. ICES J. Mar. Sci. 77, 1879–1892. https://doi.org/10.1093/icesjms/fsaa074
+86.	Thorson, J.T., 2018. Three problems with the conventional delta-model for biomass sampling data, and a computationally efficient alternative. Can. J. Fish. Aquat. Sci. 75, 1369–1382. https://doi.org/10.1139/cjfas-2017-0266
 
-87.	Thorson, J.T., Adams, G., Holsman, K., 2019. Spatio-temporal models of intermediate complexity for ecosystem assessments: A new tool for spatial fisheries management. Fish Fish. 20, 1083–1099. https://doi.org/10.1111/faf.12398
+87.	Thorson, J.T., 2015. Spatio-temporal variation in fish condition is not consistently explained by density, temperature, or season for California Current groundfishes. Mar. Ecol. Prog. Ser. 526, 101–112. https://doi.org/10.3354/meps11204
 
-88.	Thorson, J.T., Arimitsu, M.L., Barnett, L.A.K., Cheng, W., Eisner, L.B., Haynie, A.C., Hermann, A.J., Holsman, K., Kimmel, D.G., Lomas, M.W., Richar, J., Siddon, E.C., 2021a. Forecasting community reassembly using climate-linked spatio-temporal ecosystem models. Ecography 44, 612–625. https://doi.org/10.1111/ecog.05471
+88.	Thorson, James T, Adams, C.F., Brooks, E.N., Eisner, L.B., Kimmel, D.G., Legault, C.M., Rogers, L.A., Yasumiishi, E.M., 2020. Seasonal and interannual variation in spatio-temporal models for index standardization and phenology studies. ICES J. Mar. Sci. 77, 1879–1892. https://doi.org/10.1093/icesjms/fsaa074
 
-89.	Thorson, J.T., Barnes, C.L., Friedman, S.T., Morano, J.L., Siple, M.C., 2023. Spatially varying coefficients can improve parsimony and descriptive power for species distribution models. Ecography 2023, e06510. https://doi.org/10.1111/ecog.06510
+89.	Thorson, J.T., Adams, G., Holsman, K., 2019. Spatio-temporal models of intermediate complexity for ecosystem assessments: A new tool for spatial fisheries management. Fish Fish. 20, 1083–1099. https://doi.org/10.1111/faf.12398
 
-90.	Thorson, J.T., Barnett, L.A.K., 2017. Comparing estimates of abundance trends and distribution shifts using single- and multispecies models of fishes and biogenic habitat. ICES J. Mar. Sci. 74, 1311–1321. https://doi.org/10.1093/icesjms/fsw193
+90.	Thorson, J.T., Arimitsu, M.L., Barnett, L.A.K., Cheng, W., Eisner, L.B., Haynie, A.C., Hermann, A.J., Holsman, K., Kimmel, D.G., Lomas, M.W., Richar, J., Siddon, E.C., 2021a. Forecasting community reassembly using climate-linked spatio-temporal ecosystem models. Ecography 44, 612–625. https://doi.org/10.1111/ecog.05471
 
-91.	Thorson, James T., Bryan, M.D., Hulson, P.-J.F., Xu, H., Punt, A.E., 2020a. Simulation testing a new multi-stage process to measure the effect of increased sampling effort on effective sample size for age and length data. ICES J. Mar. Sci. 77, 1728–1737. https://doi.org/10.1093/icesjms/fsaa036
+91.	Thorson, J.T., Barnes, C.L., Friedman, S.T., Morano, J.L., Siple, M.C., 2023. Spatially varying coefficients can improve parsimony and descriptive power for species distribution models. Ecography 2023, e06510. https://doi.org/10.1111/ecog.06510
 
-92.	Thorson, James T., Ciannelli, L., Litzow, M.A., 2020b. Defining indices of ecosystem variability using biological samples of fish communities: A generalization of empirical orthogonal functions. Prog. Oceanogr. 181, 102244. https://doi.org/10.1016/j.pocean.2019.102244
+92.	Thorson, J.T., Barnett, L.A.K., 2017. Comparing estimates of abundance trends and distribution shifts using single- and multispecies models of fishes and biogenic habitat. ICES J. Mar. Sci. 74, 1311–1321. https://doi.org/10.1093/icesjms/fsw193
 
-93.	Thorson, J.T., Cunningham, C.J., Jorgensen, E., Havron, A., Hulson, P.-J.F., Monnahan, C.C., von Szalay, P., 2021b. The surprising sensitivity of index scale to delta-model assumptions: Recommendations for model-based index standardization. Fish. Res. 233, 105745. https://doi.org/10.1016/j.fishres.2020.105745
+93.	Thorson, James T., Bryan, M.D., Hulson, P.-J.F., Xu, H., Punt, A.E., 2020a. Simulation testing a new multi-stage process to measure the effect of increased sampling effort on effective sample size for age and length data. ICES J. Mar. Sci. 77, 1728–1737. https://doi.org/10.1093/icesjms/fsaa036
 
-94.	Thorson, J.T., Fonner, R., Haltuch, M.A., Ono, K., Winker, H., 2017a. Accounting for spatiotemporal variation and fisher targeting when estimating abundance from multispecies fishery data. Can. J. Fish. Aquat. Sci. 74, 1794–1807. https://doi.org/10.1139/cjfas-2015-0598
+94.	Thorson, James T., Ciannelli, L., Litzow, M.A., 2020b. Defining indices of ecosystem variability using biological samples of fish communities: A generalization of empirical orthogonal functions. Prog. Oceanogr. 181, 102244. https://doi.org/10.1016/j.pocean.2019.102244
 
-95.	Thorson, J.T., Haltuch, M.A., 2018. Spatiotemporal analysis of compositional data: increased precision and improved workflow using model-based inputs to stock assessment. Can. J. Fish. Aquat. Sci. 76, 401–414. https://doi.org/10.1139/cjfas-2018-0015
+95.	Thorson, J.T., Cunningham, C.J., Jorgensen, E., Havron, A., Hulson, P.-J.F., Monnahan, C.C., von Szalay, P., 2021b. The surprising sensitivity of index scale to delta-model assumptions: Recommendations for model-based index standardization. Fish. Res. 233, 105745. https://doi.org/10.1016/j.fishres.2020.105745
 
-96.	Thorson, J.T., Ianelli, J.N., Kotwicki, S., 2017b. The relative influence of temperature and size-structure on fish distribution shifts: A case-study on Walleye pollock in the Bering Sea. Fish Fish. 18, 1073–1084. https://doi.org/10.1111/faf.12225
+96.	Thorson, J.T., Fonner, R., Haltuch, M.A., Ono, K., Winker, H., 2017a. Accounting for spatiotemporal variation and fisher targeting when estimating abundance from multispecies fishery data. Can. J. Fish. Aquat. Sci. 74, 1794–1807. https://doi.org/10.1139/cjfas-2015-0598
 
-97.	Thorson, J.T., Ianelli, J.N., Larsen, E.A., Ries, L., Scheuerell, M.D., Szuwalski, C., Zipkin, E.F., 2016a. Joint dynamic species distribution models: a tool for community ordination and spatio-temporal monitoring. Glob. Ecol. Biogeogr. 25, 1144–1158. https://doi.org/10.1111/geb.12464
+97.	Thorson, J.T., Haltuch, M.A., 2018. Spatiotemporal analysis of compositional data: increased precision and improved workflow using model-based inputs to stock assessment. Can. J. Fish. Aquat. Sci. 76, 401–414. https://doi.org/10.1139/cjfas-2018-0015
 
-98.	Thorson, J.T., Kristensen, K., 2016. Implementing a generic method for bias correction in statistical models using random effects, with spatial and population dynamics examples. Fish. Res. 175, 66–74. https://doi.org/10.1016/j.fishres.2015.11.016
+98.	Thorson, J.T., Ianelli, J.N., Kotwicki, S., 2017b. The relative influence of temperature and size-structure on fish distribution shifts: A case-study on Walleye pollock in the Bering Sea. Fish Fish. 18, 1073–1084. https://doi.org/10.1111/faf.12225
 
-99.	Thorson, J.T., Pinsky, M.L., Ward, E.J., 2016b. Model-based inference for estimating shifts in species distribution, area occupied and centre of gravity. Methods Ecol. Evol. 7, 990–1002. https://doi.org/10.1111/2041-210X.12567
+99.	Thorson, J.T., Ianelli, J.N., Larsen, E.A., Ries, L., Scheuerell, M.D., Szuwalski, C., Zipkin, E.F., 2016a. Joint dynamic species distribution models: a tool for community ordination and spatio-temporal monitoring. Glob. Ecol. Biogeogr. 25, 1144–1158. https://doi.org/10.1111/geb.12464
 
-100.	Thorson, J.T., Rindorf, A., Gao, J., Hanselman, D.H., Winker, H., 2016c. Density-dependent changes in effective area occupied for sea-bottom-associated marine fishes. Proc R Soc B 283, 20161853. https://doi.org/10.1098/rspb.2016.1853
+100.	Thorson, J.T., Kristensen, K., 2016. Implementing a generic method for bias correction in statistical models using random effects, with spatial and population dynamics examples. Fish. Res. 175, 66–74. https://doi.org/10.1016/j.fishres.2015.11.016
 
-101.	Thorson, J.T., Scheuerell, M.D., Olden, J.D., Schindler, D.E., 2018. Spatial heterogeneity contributes more to portfolio effects than species variability in bottom-associated marine fishes. Proc R Soc B 285, 20180915. https://doi.org/10.1098/rspb.2018.0915
+101.	Thorson, J.T., Pinsky, M.L., Ward, E.J., 2016b. Model-based inference for estimating shifts in species distribution, area occupied and centre of gravity. Methods Ecol. Evol. 7, 990–1002. https://doi.org/10.1111/2041-210X.12567
 
-102.	Thorson, J.T., Shelton, A.O., Ward, E.J., Skaug, H.J., 2015. Geostatistical delta-generalized linear mixed models improve precision for estimated abundance indices for West Coast groundfishes. ICES J. Mar. Sci. J. Cons. 72, 1297–1310. https://doi.org/10.1093/icesjms/fsu243
+102.	Thorson, J.T., Rindorf, A., Gao, J., Hanselman, D.H., Winker, H., 2016c. Density-dependent changes in effective area occupied for sea-bottom-associated marine fishes. Proc R Soc B 283, 20161853. https://doi.org/10.1098/rspb.2016.1853
 
-103.	Timbs, J.R., Powell, E.N., Mann, R., 2019. Changes in the spatial distribution and anatomy of a range shift for the Atlantic surfclam Spisula solidissima in the Mid-Atlantic Bight and on Georges Bank. Mar. Ecol. Prog. Ser. 620, 77–97. https://doi.org/10.3354/meps12964
+103.	Thorson, J.T., Scheuerell, M.D., Olden, J.D., Schindler, D.E., 2018. Spatial heterogeneity contributes more to portfolio effects than species variability in bottom-associated marine fishes. Proc R Soc B 285, 20180915. https://doi.org/10.1098/rspb.2018.0915
 
-104.	Timbs, J.R., Powell, E.N., Mann, R., 2018. Assessment of the Relationship of Stock and Recruitment in the Atlantic Surfclam Spisula solidissima in the Northwestern Atlantic Ocean. J. Shellfish Res. 37, 965–978. https://doi.org/10.2983/035.037.0507
+104.	Thorson, J.T., Shelton, A.O., Ward, E.J., Skaug, H.J., 2015. Geostatistical delta-generalized linear mixed models improve precision for estimated abundance indices for West Coast groundfishes. ICES J. Mar. Sci. J. Cons. 72, 1297–1310. https://doi.org/10.1093/icesjms/fsu243
 
-105.	Tolimieri, N., Wallace, J., Haltuch, M., 2020. Spatio-temporal patterns in juvenile habitat for 13 groundfishes in the California Current Ecosystem. PLOS ONE 15, e0237996. https://doi.org/10.1371/journal.pone.0237996
+105.	Timbs, J.R., Powell, E.N., Mann, R., 2019. Changes in the spatial distribution and anatomy of a range shift for the Atlantic surfclam Spisula solidissima in the Mid-Atlantic Bight and on Georges Bank. Mar. Ecol. Prog. Ser. 620, 77–97. https://doi.org/10.3354/meps12964
 
-106.	Vert-pre, K.A., Trancart, T., Feunteun, E., 2020. Spatiotemporal patterns in marine fish and cephalopods communities across scales: using an autoregressive spatiotemporal clustering model. A study of fish and cephalopods of the Eastern English Channel. Cybium 44, 095–112. https://doi.org/10.26028/CYBIUM/2020-442-002
+106.	Timbs, J.R., Powell, E.N., Mann, R., 2018. Assessment of the Relationship of Stock and Recruitment in the Atlantic Surfclam Spisula solidissima in the Northwestern Atlantic Ocean. J. Shellfish Res. 37, 965–978. https://doi.org/10.2983/035.037.0507
 
-107.	Xu, H., Lennert-Cody, C.E., Maunder, M.N., Minte-Vera, C.V., 2019. Spatiotemporal dynamics of the dolphin-associated purse-seine fishery for yellowfin tuna (Thunnus albacares) in the eastern Pacific Ocean. Fish. Res. 213, 121–131. https://doi.org/10.1016/j.fishres.2019.01.013
+107.	Tolimieri, N., Wallace, J., Haltuch, M., 2020. Spatio-temporal patterns in juvenile habitat for 13 groundfishes in the California Current Ecosystem. PLOS ONE 15, e0237996. https://doi.org/10.1371/journal.pone.0237996
 
-108.	Yasumiishi, E.M., Cieciel, K., Andrews, A.G., Murphy, J., Dimond, J.A., 2020. Climate-related changes in the biomass and distribution of small pelagic fishes in the eastern Bering Sea during late summer, 2002-2018. Deep Sea Res. Part II Top. Stud. Oceanogr. 104907. https://doi.org/10.1016/j.dsr2.2020.104907
+108.	Vert-pre, K.A., Trancart, T., Feunteun, E., 2020. Spatiotemporal patterns in marine fish and cephalopods communities across scales: using an autoregressive spatiotemporal clustering model. A study of fish and cephalopods of the Eastern English Channel. Cybium 44, 095–112. https://doi.org/10.26028/CYBIUM/2020-442-002
 
-109.	幹彦甲斐, 洋平塚原, 緑橋本, 2021. 時空間統計モデルおよびrのパッケージvastの概要と国際水産資源への適用事例. 日本水産学会誌 advpub. https://doi.org/10.2331/suisan.20-00034
+109.	Von Szalay, P.G., Kotwicki, S., Barnett, L.A.K., Rugolo, L.J., Ono, K., 2023. Reducing uncertainty in survey abundance estimates by considering alternative designs and estimators: a case study with 3 species in the Gulf of Alaska. Fish. Bull. 121, 50–66. https://doi.org/10.7755/FB.121.1-2.5
+
+110.	Wells, B., Santora, J., Bizzarro, J., Billings, A., Brodeur, R., Daly, E., Field, J., Richerson, K., Thorson, J., 2023. Trophoscapes of predatory fish reveal biogeographic structuring of spatial dietary overlap and inform fisheries bycatch patterns. Mar. Ecol. Prog. Ser. https://doi.org/10.3354/meps14319
+
+111.	Xu, H., Lennert-Cody, C.E., Maunder, M.N., Minte-Vera, C.V., 2019. Spatiotemporal dynamics of the dolphin-associated purse-seine fishery for yellowfin tuna (Thunnus albacares) in the eastern Pacific Ocean. Fish. Res. 213, 121–131. https://doi.org/10.1016/j.fishres.2019.01.013
+
+112.	Yasumiishi, E.M., Cieciel, K., Andrews, A.G., Murphy, J., Dimond, J.A., 2020. Climate-related changes in the biomass and distribution of small pelagic fishes in the eastern Bering Sea during late summer, 2002-2018. Deep Sea Res. Part II Top. Stud. Oceanogr. 104907. https://doi.org/10.1016/j.dsr2.2020.104907
+
+113.	Yazdanian, M., Kankaanpää, T., Itämies, J., Leinonen, R., Merckx, T., Pöyry, J., Sihvonen, P., Suuronen, A., Välimäki, P., Kivelä, S.M., n.d. Ecological and life-history traits predict temporal trends in biomass of boreal moths. Insect Conserv. Divers. n/a. https://doi.org/10.1111/icad.12657
+
+114.	幹彦甲斐, 洋平塚原, 緑橋本, 2021. 時空間統計モデルおよびrのパッケージvastの概要と国際水産資源への適用事例. 日本水産学会誌 advpub. https://doi.org/10.2331/suisan.20-00034
+
