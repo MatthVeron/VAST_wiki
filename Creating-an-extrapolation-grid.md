@@ -3,7 +3,10 @@ VAST simultaneously fits a spatio-temporal regression model, and then predicts r
 2. Require explicit consideration of whether covariates affect density (used for both fitting and prediction) or catchability (used just for fitting);
 3. Allow for bias-correction and asymptotic standard errors in model predictions and derived quantities;
 
-However, combining these two tasks requires the user to pre-specify the spatial domain for prediction (the "extrapolation-grid").  We here show how users can make a new extrapolation-grid, and also refer users to `?make_extrapolation_info`
+However, combining these two tasks requires the user to pre-specify the spatial domain for prediction (the "extrapolation-grid").  We here show how users can make a new extrapolation-grid, and also refer users to `?make_extrapolation_info`.
+
+### Warning
+Note that the `locator` function used below only works properly in Rstudio when screen setting "zoom" is set to 100% and see details [here](https://stackoverflow.com/questions/73256552/problem-with-point-location-with-locator-function-in-r).  We recommend carefully checking the extrapolation-grid constructed against the intended area (thanks to Ellen Yasumiishi for identifying this issue and finding the explanation)
 
 ```R
 ### An example of how to create user-defined extrapolation
