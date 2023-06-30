@@ -8,6 +8,7 @@ However, combining these two tasks requires the user to pre-specify the spatial 
 ### Warning
 Note that the `locator` function used below only works properly in Rstudio when screen setting "zoom" is set to 100% and see details [here](https://stackoverflow.com/questions/73256552/problem-with-point-location-with-locator-function-in-r).  We recommend carefully checking the extrapolation-grid constructed against the intended area (thanks to Ellen Yasumiishi for identifying this issue and finding the explanation)
 
+### Code demo
 ```R
 ### An example of how to create user-defined extrapolation
 ### regions (extents) for VAST.
