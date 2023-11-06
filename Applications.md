@@ -118,6 +118,8 @@ Ocean (ISC). http://isc.fra.go.jp/pdf/PBF/ISC21_PBF_1/ISC_21_PBFWG_1_03_Chang_re
 26. Sawada, K., Gruss, A., Okuda, T., 2022. Update on the VAST (vector autoregressive spatio-temporal) modelling of grenadier relative abundance in Subarea 48.6 (No. WG-FSA-2022/33). CCAMLR.
 27. Grüss, A., Moore, G., Pinkerton, M., Devine, J., 2022. VAST (vector autoregressive spatio-temporal) modelling of macrourid relative abundance in the Ross Sea region to support by-catch management (No. WG-FSA-2022/48). CCAMLR.
 28. Nishijima, S., Kanazawa, K., Ichinokawa, M., Yukami, R., Manabe, A., 2022. Standardizing monthly egg survey data as an abundance index for spawning stock biomass of chub mackerel in the Northwest Pacific (No. NPFC-2022-TWG CMSA06-WP10). North Pacific Fisheries Commission.
+29.  Sawada, K., Okuda, T., 2023. Improved VAST (vector autoregressive spatio-temporal) modelling of grenadier relative abundance in Subarea 48.6 (No. WG-FSA-2023/33). CCAMLR.
+
 
 ### Journal articles
 Finally, I list instances of peer-reviewed journal articles using `VAST` (or its precursors: `SpatialDeltaGLMM` and `SpatialDFA`)
